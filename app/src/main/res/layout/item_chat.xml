@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:id="@+id/container">
+
+    <LinearLayout
+        android:id="@+id/layoutOther"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:weightSum="100">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="25">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_chat_other"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvOtherUserName"
+                    android:layout_width="wrap_content"
+                    style="@style/textViewBlackNormal"
+                    android:hint="@string/user_name"
+                    android:singleLine="true"
+                    android:text="@string/user_name"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tvOtherMessage"
+                    android:layout_width="wrap_content"
+                    style="@style/textViewBlackNormal"
+                    android:layout_marginTop="2dp"
+                    android:autoLink="all"
+                    android:hint="@string/your_message"
+                    android:linksClickable="true"
+                    android:text="@string/message" />
+
+                <com.github.curioustechizen.ago.RelativeTimeTextView
+                    android:id="@+id/tvOtherDate"
+                    android:layout_width="match_parent"
+                    style="@style/textViewBlackNormal"
+                    android:layout_marginTop="2dp"
+                    android:gravity="right"
+                    android:hint="@string/user_name"
+                    android:singleLine="true"
+                    android:text="@string/date"
+                    android:textSize="8sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="75" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutCurrent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:weightSum="100">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="75" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="25"
+            android:gravity="right">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_chat_current"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvCurrentUserName"
+                    android:layout_width="wrap_content"
+                    style="@style/textViewBlackNormal"
+                    android:hint="@string/user_name"
+                    android:singleLine="true"
+                    android:text="@string/user_name"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tvCurrentMessage"
+                    android:layout_width="wrap_content"
+                    style="@style/textViewBlackNormal"
+                    android:layout_marginTop="2dp"
+                    android:autoLink="all"
+                    android:hint="@string/your_message"
+                    android:linksClickable="true"
+                    android:text="@string/message" />
+
+                <com.github.curioustechizen.ago.RelativeTimeTextView
+                    android:id="@+id/tvCurrentDate"
+                    android:layout_width="match_parent"
+                    style="@style/textViewBlackNormal"
+                    android:layout_marginTop="2dp"
+                    android:gravity="right"
+                    android:hint="@string/user_name"
+                    android:singleLine="true"
+                    android:text="@string/date"
+                    android:textSize="8sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/main"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:background="@color/white">
+	
+    <EditText
+      android:id="@+id/editText"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:textColor="@color/white"  
+      android:padding="15dp"
+      android:layout_centerInParent="true"
+      android:layout_gravity="center"  
+      android:gravity="center"    
+      android:hint="@string/search"
+      android:visibility="gone"/>
+    
+    <View
+      android:id="@+id/divider"
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:background="@color/gray_7"
+      android:layout_below="@id/editText"
+      android:visibility="gone"/>
+	
+    <ListView
+        android:id="@+id/ad_search_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:scrollbars="none"
+        android:divider="@null"
+        android:listSelector="@color/transparent"
+      android:layout_below="@id/divider" />
+
+</RelativeLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group>
+
+        <item
+            android:id="@+id/nav_notification"
+            android:icon="@drawable/ic_notification"
+            android:title="@string/notifications" />
+
+        <item
+            android:id="@+id/nav_chats"
+            android:icon="@drawable/ic_chat"
+            android:title="@string/chats" />
+
+        <item
+            android:id="@+id/nav_save_discovery"
+            android:icon="@drawable/ic_saved"
+            android:title="@string/saved_discoveries" />
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_logout"
+            android:title="@string/logout" />
+
+    </group>
+
+</menu>

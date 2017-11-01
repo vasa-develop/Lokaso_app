@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <View style="@style/line_green" />
+
+        <TextView
+            android:id="@+id/tvQuestionHint"
+            style="@style/textViewBlueGreySmall"
+            android:layout_marginTop="5dp"
+            android:text="@string/query"
+            android:paddingLeft="2dp" />
+
+        <TextView
+            android:id="@+id/tvQuestion"
+            style="@style/core_edittext_style2"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:hint="@string/question" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <View style="@style/line_green" />
+
+        <TextView
+            android:id="@+id/tvAnswerHint"
+            style="@style/textViewBlueGreySmall"
+            android:layout_marginTop="5dp"
+            android:text="@string/answer"
+            android:paddingLeft="2dp" />
+
+        <EditText
+            android:id="@+id/tvAnswer"
+            style="@style/core_edittext_style2"
+            android:gravity="center"
+            android:hint="@string/answer"
+            android:maxLength="140" />
+
+    </LinearLayout>
+
+</LinearLayout>

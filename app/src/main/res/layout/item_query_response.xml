@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="@dimen/radius_query"
+    app:cardElevation="@dimen/elevation_query"
+    app:contentPadding="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ivPic"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/user_placeholder" />
+
+        <RelativeLayout
+            android:id="@+id/layout1"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_toRightOf="@+id/ivPic"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tvName"
+                style="@style/textViewOrangeExtraLarge"
+                android:layout_width="match_parent"
+                android:text="@string/name" />
+
+            <TextView
+                android:id="@+id/tvProfession"
+                style="@style/textViewLightGreyMedium"
+                android:layout_below="@+id/tvName"
+                android:layout_marginTop="2dp"
+                android:text="@string/profession" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvComment"
+            style="@style/textViewGreyMedium"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/layout1"
+            android:layout_marginTop="10dp"
+            android:text="@string/comment" />
+
+        <LinearLayout
+            android:id="@+id/layoutActions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvComment"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="4dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ToggleButton
+                    android:id="@+id/bUpvote"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/toggle_upvote"
+                    android:textOff=""
+                    android:textOn="" />
+
+                <TextView
+                    android:id="@+id/tvUpvote"
+                    style="@style/textViewBlackMedium"
+                    android:text="@string/_0" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ToggleButton
+                    android:id="@+id/bDownvote"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/toggle_downvote"
+                    android:textOff=""
+                    android:textOn="" />
+
+                <TextView
+                    android:id="@+id/tvDownvote"
+                    style="@style/textViewBlackMedium"
+                    android:text="@string/_0" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/bComment"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/ic_comment" />
+
+                <TextView
+                    android:id="@+id/tvCommentCount"
+                    style="@style/textViewBlackMedium"
+                    android:text="@string/_0" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutComment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/bEditComment"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/ic_edit_grey"
+                    android:visibility="visible" />
+
+                <TextView
+                    style="@style/textViewBlackMedium"
+                    android:text="@string/_0"
+                    android:visibility="invisible" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutReport"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <ToggleButton
+                    android:id="@+id/bReport"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/toggle_spam"
+                    android:textOff=""
+                    android:textOn="" />
+
+                <TextView
+                    style="@style/textViewBlackMedium"
+                    android:text="@string/_0"
+                    android:visibility="invisible" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            style="@style/line_green"
+            android:layout_below="@+id/layoutActions"
+            android:layout_marginTop="8dp"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

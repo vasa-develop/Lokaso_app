@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/tvName"
+        style="@style/textViewBlackLarge"
+        android:layout_below="@+id/tvInterest"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/suggestion" />
+
+    <TextView
+        android:id="@+id/tvLocation"
+        style="@style/textViewLightGreyNormal"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/tvName"
+        android:layout_toLeftOf="@+id/bFollowQuery"
+        android:text="@string/profession"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" />
+
+   </LinearLayout>

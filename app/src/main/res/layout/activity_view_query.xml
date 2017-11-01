@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/container">
+
+    <include layout="@layout/toolbar_layout" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/layoutComment"
+        android:layout_below="@+id/toolbar"
+        android:fillViewport="true"
+        android:fitsSystemWindows="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolbar"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/layoutHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:clickable="true">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/ivPic"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/user_placeholder"
+                    android:visibility="visible" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/tvName"
+                        style="@style/textViewOrangeExtraLarge"
+                        android:text="@string/name"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvProfession"
+                        style="@style/textViewLightGreyMedium"
+                        android:layout_below="@+id/tvName"
+                        android:layout_marginTop="3dp"
+                        android:text="@string/profession" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvQuery"
+                style="@style/textViewBlackLarge"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/my_query" />
+
+            <RelativeLayout
+                android:id="@+id/layout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <LinearLayout
+                    android:id="@+id/layoutCredit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:gravity="left"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvCreditPoints"
+                        style="@style/textViewBlackLarge"
+                        android:gravity="center_horizontal"
+                        android:singleLine="true"
+                        android:text="@string/_0"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvPointsHint"
+                        style="@style/textViewBlackNormal"
+                        android:layout_marginBottom="2dp"
+                        android:text="@string/points" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layoutValidity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_toRightOf="@+id/layoutCredit"
+                    android:gravity="left"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvValidity"
+                        style="@style/textViewBlackLarge"
+                        android:gravity="center_horizontal"
+                        android:singleLine="true"
+                        android:text="@string/time"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvValidityHint"
+                        style="@style/textViewBlackNormal"
+                        android:layout_marginBottom="2dp"
+                        android:text="@string/remaining" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/bRespond"
+                    style="@style/orange_button_style"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:inputType="text"
+                    android:text="@string/respond"
+                    android:visibility="visible" />
+
+                <Button
+                    android:id="@+id/bExtend"
+                    style="@style/orange_button_style"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@drawable/ic_extend"
+                    android:inputType="text"
+                    android:text="@string/extend"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+            <View
+                style="@style/line_green"
+                android:layout_marginTop="10dp"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/layoutAction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/grey_back"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/layoutFollow"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/tag_follow"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/tvFollowHint"
+                            style="@style/textViewWhiteMedium"
+                            android:gravity="left"
+                            android:text="@string/follow_nuser"
+                            android:textColor="@color/light_blue_text" />
+
+                    </RelativeLayout>
+
+                    <ImageButton
+                        android:id="@+id/bFollow"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@color/transparent"
+                        android:clickable="false"
+                        android:gravity="center"
+                        android:src="@drawable/ic_unfollow" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layoutFollowQuery"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/grey_back"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <TextView
+                        android:id="@+id/tvFollowQueryHint"
+                        style="@style/textViewWhiteMedium"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:gravity="left"
+                        android:text="@string/follow_nquery" />
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <ImageButton
+                            android:id="@+id/bFollowQuery"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@color/transparent"
+                            android:clickable="false"
+                            android:gravity="center"
+                            android:src="@drawable/ic_unfollow_query" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                style="@style/line_green"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/light_grey_background" />
+
+                <TextView
+                    android:id="@+id/tvError"
+                    style="@style/textViewBlackLarge"
+                    android:layout_centerInParent="true"
+                    android:text="@string/error_message"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <LinearLayout
+        android:id="@+id/layoutComment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/chat_background"
+        android:orientation="horizontal"
+        android:paddingBottom="2dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="2dp"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/tvResponse"
+            style="@style/core_edittext_style"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:hint="@string/enter_your_comment"
+            android:inputType="textMultiLine"
+            android:maxLines="5"
+            android:padding="10dp"
+            android:textColor="@color/black_text"
+            android:textColorHint="@color/light_grey_text" />
+
+        <ImageButton
+            android:id="@+id/bSend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10dp"
+            android:background="@drawable/ic_chat" />
+
+    </LinearLayout>
+
+</RelativeLayout>

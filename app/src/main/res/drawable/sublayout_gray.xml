@@ -1,0 +1,18 @@
+
+<shape 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle"> 
+	
+	<corners 
+	    android:bottomRightRadius="7sp" 
+        android:bottomLeftRadius="7sp" 
+        android:topLeftRadius="7sp"
+        android:topRightRadius="7sp"/> 
+        
+	<gradient
+      	android:startColor="@color/dialog_color_gray"
+      	android:centerColor="@color/dialog_color_gray"
+      	android:endColor="@color/dialog_color_gray"
+      	android:angle="0" />
+    
+</shape>

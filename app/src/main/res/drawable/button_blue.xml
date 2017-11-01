@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--android:drawable="@drawable/login_button_fb_pressed"-->
+    <item
+        android:state_focused="true"
+        android:state_pressed="true">
+        <shape>
+            <solid android:color="@color/facebook_button_background_color_pressed"/>
+            <corners android:radius="@dimen/login_btn_radius"/>
+            <size android:height="@dimen/login_btn_height"/>
+        </shape>
+    </item>
+
+    <item
+        android:state_focused="false"
+        android:state_pressed="true">
+        <shape>
+            <solid android:color="@color/facebook_button_background_color_pressed"/>
+            <corners android:radius="@dimen/login_btn_radius"/>
+            <size android:height="@dimen/login_btn_height"/>
+        </shape>
+    </item>
+
+    <!--android:drawable="@drawable/login_button_fb_pressed"-->
+    <item
+        android:state_focused="true">
+        <shape>
+            <solid android:color="@color/facebook_button_background_color_pressed"/>
+            <corners android:radius="@dimen/login_btn_radius"/>
+            <size android:height="@dimen/login_btn_height"/>
+        </shape>
+    </item>
+
+    <!--android:drawable="@drawable/login_button_fb_disabled"-->
+    <item
+        android:state_enabled="false">
+        <shape>
+            <solid android:color="@color/facebook_button_background_color_disabled"/>
+            <corners android:radius="@dimen/login_btn_radius"/>
+            <size android:height="@dimen/login_btn_height"/>
+        </shape>
+    </item>
+
+    <!--android:drawable="@drawable/login_button_fb_default"-->
+    <item>
+        <shape>
+            <solid android:color="@color/facebook_button_background_color"/>
+            <corners android:radius="@dimen/login_btn_radius"/>
+            <size android:height="@dimen/login_btn_height"/>
+        </shape>
+    </item>
+
+</selector>

@@ -1,0 +1,42 @@
+[
+    {
+        "merged": "D:\\Project\\Lokaso\\lokaso-svn\\android\\Lokaso\\cropimage\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\ic_action_rotate_left.png",
+        "source": "D:\\Project\\Lokaso\\lokaso-svn\\android\\Lokaso\\cropimage\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\ic_action_rotate_left.png"
+    },
+    {
+        "merged": "D:\\Project\\Lokaso\\svn\\android\\Lokaso\\cropimage\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\ic_action_rotate_right.png",
+        "source": "D:\\Project\\Lokaso\\svn\\android\\Lokaso\\cropimage\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\ic_action_rotate_right.png"
+    },
+    {
+        "merged": "D:\\Project\\Lokaso\\svn\\android\\Lokaso\\cropimage\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\camera_crop_height.png",
+        "source": "D:\\Project\\Lokaso\\svn\\android\\Lokaso\\cropimage\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\camera_crop_height.png"
+    },
+    {
+        "merged": "D:\\Project\\Lokaso\\lokaso-svn\\android\\Lokaso\\cropimage\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\indicator_autocrop.png",
+        "source": "D:\\Project\\Lokaso\\lokaso-svn\\android\\Lokaso\\cropimage\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\indicator_autocrop.png"
+    },
+    {
+        "merged": "D:\\Project\\Lokaso\\svn\\android\\Lokaso\\cropimage\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\ic_action_rotate_left.png",
+        "source": "D:\\Project\\Lokaso\\svn\\android\\Lokaso\\cropimage\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\ic_action_rotate_left.png"
+    },
+    {
+        "merged": "D:\\Project\\Lokaso\\lokaso-svn\\android\\Lokaso\\cropimage\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\camera_crop_width.png",
+        "source": "D:\\Project\\Lokaso\\lokaso-svn\\android\\Lokaso\\cropimage\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\camera_crop_width.png"
+    },
+    {
+        "merged": "D:\\Project\\Lokaso\\svn\\android\\Lokaso\\cropimage\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\camera_crop_width.png",
+        "source": "D:\\Project\\Lokaso\\svn\\android\\Lokaso\\cropimage\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\camera_crop_width.png"
+    },
+    {
+        "merged": "D:\\Project\\Lokaso\\svn\\android\\Lokaso\\cropimage\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\indicator_autocrop.png",
+        "source": "D:\\Project\\Lokaso\\svn\\android\\Lokaso\\cropimage\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\indicator_autocrop.png"
+    },
+    {
+        "merged": "D:\\Project\\Lokaso\\lokaso-svn\\android\\Lokaso\\cropimage\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\ic_action_rotate_right.png",
+        "source": "D:\\Project\\Lokaso\\lokaso-svn\\android\\Lokaso\\cropimage\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\ic_action_rotate_right.png"
+    },
+    {
+        "merged": "D:\\Project\\Lokaso\\lokaso-svn\\android\\Lokaso\\cropimage\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\camera_crop_height.png",
+        "source": "D:\\Project\\Lokaso\\lokaso-svn\\android\\Lokaso\\cropimage\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\camera_crop_height.png"
+    }
+]

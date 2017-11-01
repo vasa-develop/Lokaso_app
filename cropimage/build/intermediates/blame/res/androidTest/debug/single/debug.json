@@ -1,0 +1,38 @@
+[
+    {
+        "merged": "/home/vaibhav/AndroidStudioProjects/Lokaso/cropimage/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4_ic_action_rotate_right.png.flat",
+        "source": "/home/vaibhav/AndroidStudioProjects/Lokaso/cropimage/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/ic_action_rotate_right.png"
+    },
+    {
+        "merged": "/home/vaibhav/AndroidStudioProjects/Lokaso/cropimage/build/intermediates/res/merged/androidTest/debug/drawable_sublayout_blue_dark.xml.flat",
+        "source": "/home/vaibhav/AndroidStudioProjects/Lokaso/cropimage/build/intermediates/bundles/debug/res/drawable/sublayout_blue_dark.xml"
+    },
+    {
+        "merged": "/home/vaibhav/AndroidStudioProjects/Lokaso/cropimage/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4_camera_crop_height.png.flat",
+        "source": "/home/vaibhav/AndroidStudioProjects/Lokaso/cropimage/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/camera_crop_height.png"
+    },
+    {
+        "merged": "/home/vaibhav/AndroidStudioProjects/Lokaso/cropimage/build/intermediates/res/merged/androidTest/debug/drawable_selector_button_blue_darker.xml.flat",
+        "source": "/home/vaibhav/AndroidStudioProjects/Lokaso/cropimage/build/intermediates/bundles/debug/res/drawable/selector_button_blue_darker.xml"
+    },
+    {
+        "merged": "/home/vaibhav/AndroidStudioProjects/Lokaso/cropimage/build/intermediates/res/merged/androidTest/debug/layout_cropimage.xml.flat",
+        "source": "/home/vaibhav/AndroidStudioProjects/Lokaso/cropimage/build/intermediates/bundles/debug/res/layout/cropimage.xml"
+    },
+    {
+        "merged": "/home/vaibhav/AndroidStudioProjects/Lokaso/cropimage/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4_indicator_autocrop.png.flat",
+        "source": "/home/vaibhav/AndroidStudioProjects/Lokaso/cropimage/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/indicator_autocrop.png"
+    },
+    {
+        "merged": "/home/vaibhav/AndroidStudioProjects/Lokaso/cropimage/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4_ic_action_rotate_left.png.flat",
+        "source": "/home/vaibhav/AndroidStudioProjects/Lokaso/cropimage/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/ic_action_rotate_left.png"
+    },
+    {
+        "merged": "/home/vaibhav/AndroidStudioProjects/Lokaso/cropimage/build/intermediates/res/merged/androidTest/debug/drawable_sublayout_blue_dark_click.xml.flat",
+        "source": "/home/vaibhav/AndroidStudioProjects/Lokaso/cropimage/build/intermediates/bundles/debug/res/drawable/sublayout_blue_dark_click.xml"
+    },
+    {
+        "merged": "/home/vaibhav/AndroidStudioProjects/Lokaso/cropimage/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4_camera_crop_width.png.flat",
+        "source": "/home/vaibhav/AndroidStudioProjects/Lokaso/cropimage/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/camera_crop_width.png"
+    }
+]

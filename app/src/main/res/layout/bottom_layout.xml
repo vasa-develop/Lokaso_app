@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layoutBottom"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignBottom="@+id/mSwipeRefreshLayout"
+    android:animateLayoutChanges="true"
+    android:background="@color/bottom_bar"
+    android:orientation="horizontal"
+    android:clickable="true">
+
+    <!--android:background="?attr/selectableItemBackground"-->
+
+    <LinearLayout
+        android:id="@+id/layoutDiscovery"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp">
+
+        <ImageView
+            android:id="@+id/bDiscovery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:clickable="false"
+            android:src="@drawable/button_discovery" />
+
+        <TextView
+            style="@style/textViewBottomLayout"
+            android:layout_marginTop="2dp"
+            android:text="@string/local_tips"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutQuery"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp">
+
+        <ImageButton
+            android:id="@+id/bQuery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:clickable="false"
+            android:src="@drawable/button_query" />
+
+        <TextView
+            style="@style/textViewBottomLayout"
+            android:layout_marginTop="2dp"
+            android:text="@string/queries_around1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="2dp"
+        android:paddingTop="8dp">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/bAddQuery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:src="@drawable/fab_plus_icon"
+            app:backgroundTint="@color/colorPrimary"
+            app:fabSize="mini" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutSearch"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="2dp"
+        android:paddingTop="2dp">
+
+        <ImageButton
+            android:id="@+id/bSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:clickable="false"
+            android:src="@drawable/button_search" />
+
+        <TextView
+            style="@style/textViewBottomLayout"
+            android:layout_marginTop="2dp"
+            android:text="@string/search" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutNotification"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="2dp"
+        android:paddingTop="2dp">
+
+        <ImageButton
+            android:id="@+id/bNotification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:clickable="false"
+            android:src="@drawable/button_notification" />
+
+        <TextView
+            style="@style/textViewBottomLayout"
+            android:layout_marginTop="2dp"
+            android:text="@string/notification"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="170dp"
+    android:layout_height="wrap_content"
+    android:background="@color/off_white"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/bSuggestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="left|center_vertical"
+        android:padding="5dp"
+        android:text="@string/suggestion" />
+
+    <Button
+        android:id="@+id/bQuery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="left|center_vertical"
+        android:padding="5dp"
+        android:text="@string/queries" />
+
+    <Button
+        android:id="@+id/bFolks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="left|center_vertical"
+        android:padding="5dp"
+        android:text="@string/folks" />
+
+</LinearLayout>

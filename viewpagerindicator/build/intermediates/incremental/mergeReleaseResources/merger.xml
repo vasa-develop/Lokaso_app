@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="output$Generated" generated="true"><source path="C:\Android\.android\build-cache\6b17530d73dd9fabdfed91be359eacbe1c15c78d\output\res"/></dataSet><dataSet config="main$Generated" generated="true"><source path="D:\Project\Lokaso\svn\android\Lokaso\viewpagerindicator\src\main\res"/><source path="D:\Project\Lokaso\svn\android\Lokaso\viewpagerindicator\build\generated\res\rs\release"/><source path="D:\Project\Lokaso\svn\android\Lokaso\viewpagerindicator\build\generated\res\resValues\release"/></dataSet><dataSet config="release$Generated" generated="true"><source path="D:\Project\Lokaso\svn\android\Lokaso\viewpagerindicator\src\release\res"/></dataSet><dataSet config="output" from-dependency="true" generated-set="output$Generated"><source path="C:\Android\.android\build-cache\6b17530d73dd9fabdfed91be359eacbe1c15c78d\output\res"/></dataSet><dataSet config="main" generated-set="main$Generated"><source path="D:\Project\Lokaso\svn\android\Lokaso\viewpagerindicator\src\main\res"><file path="D:\Project\Lokaso\svn\android\Lokaso\viewpagerindicator\src\main\res\values\vpi__attrs.xml" qualifiers=""><declare-styleable name="CirclePageIndicator">
+        
+        <attr name="centered"/>
+        
+        <attr format="color" name="fillColor"/>
+        
+        <attr format="color" name="pageColor"/>
+        
+        <attr name="android:orientation"/>
+        
+        <attr format="dimension" name="radius"/>
+        
+        <attr format="boolean" name="snap"/>
+        
+        <attr format="color" name="strokeColor"/>
+        
+        <attr name="strokeWidth"/>
+        
+        <attr name="android:background"/>
+    </declare-styleable><attr format="color" name="selectedColor"/><attr format="dimension" name="strokeWidth"/><attr format="color" name="unselectedColor"/><attr format="boolean" name="centered"/><declare-styleable name="ViewPagerIndicator">
+        
+        <attr format="reference" name="vpiCirclePageIndicatorStyle"/>
+    </declare-styleable></file><file path="D:\Project\Lokaso\svn\android\Lokaso\viewpagerindicator\src\main\res\values\vpi__colors.xml" qualifiers=""><color name="vpi__bright_foreground_holo_light">@color/vpi__background_holo_dark</color><color name="vpi__bright_foreground_disabled_holo_dark">#ff4c4c4c</color><color name="vpi__bright_foreground_inverse_holo_light">@color/vpi__bright_foreground_holo_dark</color><color name="vpi__bright_foreground_disabled_holo_light">#ffb2b2b2</color><color name="vpi__bright_foreground_inverse_holo_dark">@color/vpi__bright_foreground_holo_light</color><color name="vpi__bright_foreground_holo_dark">@color/vpi__background_holo_light</color><color name="vpi__background_holo_dark">#ff000000</color><color name="vpi__background_holo_light">#fff3f3f3</color></file><file path="D:\Project\Lokaso\svn\android\Lokaso\viewpagerindicator\src\main\res\values\vpi__defaults.xml" qualifiers=""><color name="default_circle_indicator_stroke_color">#FFDDDDDD</color><bool name="default_circle_indicator_snap">false</bool><bool name="default_circle_indicator_centered">true</bool><color name="default_circle_indicator_page_color">#00000000</color><color name="default_circle_indicator_fill_color">#FFFFFFFF</color><dimen name="default_circle_indicator_radius">3dp</dimen><integer name="default_circle_indicator_orientation">0</integer><dimen name="default_circle_indicator_stroke_width">1dp</dimen></file><file path="D:\Project\Lokaso\svn\android\Lokaso\viewpagerindicator\src\main\res\values\vpi__styles.xml" qualifiers=""><style name="Widget">
+    </style><style name="Theme.PageIndicatorDefaults" parent="android:Theme">
+    </style></file></source><source path="D:\Project\Lokaso\svn\android\Lokaso\viewpagerindicator\build\generated\res\rs\release"/><source path="D:\Project\Lokaso\svn\android\Lokaso\viewpagerindicator\build\generated\res\resValues\release"/></dataSet><dataSet config="release" generated-set="release$Generated"><source path="D:\Project\Lokaso\svn\android\Lokaso\viewpagerindicator\src\release\res"/></dataSet><mergedItems><configuration qualifiers=""><declare-styleable name="ViewPagerIndicator"><attr format="reference" name="vpiCirclePageIndicatorStyle"/></declare-styleable><declare-styleable name="CirclePageIndicator"><attr name="centered"/><attr format="color" name="fillColor"/><attr format="color" name="pageColor"/><attr name="android:orientation"/><attr format="dimension" name="radius"/><attr format="boolean" name="snap"/><attr format="color" name="strokeColor"/><attr name="strokeWidth"/><attr name="android:background"/></declare-styleable></configuration></mergedItems></merger>

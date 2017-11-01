@@ -1,0 +1,17 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    style="@style/filter_checkbox_layout_style">
+    
+    <TextView
+        style="@style/filter_checkbox_text_style"
+        android:id="@+id/checkBoxText"
+        android:text="ADVENTURE" />
+
+    <CheckBox
+        style="@style/filter_checkbox_style"
+        android:id="@+id/checkBox"
+        android:checked="false"
+        app:buttonTint="@color/colorPrimary"/>
+
+</LinearLayout>

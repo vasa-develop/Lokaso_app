@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:overScrollMode="never">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:id="@+id/container">
+
+        <EditText
+            android:id="@+id/tvFName"
+            style="@style/login_edittext_style"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:drawableLeft="@drawable/ic_name"
+            android:hint="@string/first_name"
+            android:inputType="textCapSentences" />
+
+        <EditText
+            android:id="@+id/tvLName"
+            style="@style/login_edittext_style"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="8dp"
+            android:drawableLeft="@drawable/ic_name"
+            android:hint="@string/last_name"
+            android:inputType="textCapSentences" />
+
+        <EditText
+            android:id="@+id/tvEmail"
+            style="@style/login_edittext_style"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="8dp"
+            android:drawableLeft="@drawable/ic_email"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/tvPassword"
+            style="@style/login_edittext_style"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="8dp"
+            android:drawableLeft="@drawable/ic_password"
+            android:hint="@string/password"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/tvAboutMe"
+            style="@style/login_edittext_style"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="8dp"
+            android:drawableLeft="@drawable/ic_about"
+            android:gravity="top"
+            android:hint="@string/about_me_optional"
+            android:imeOptions="actionDone"
+            android:inputType="textMultiLine|textCapSentences"
+            android:maxLength="140"
+            android:maxLines="3" />
+
+        <TextView
+            android:id="@+id/tvProfession"
+            style="@style/login_edittext_style"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="8dp"
+            android:drawableLeft="@drawable/ic_profession"
+            android:drawableRight="@drawable/ic_down_grey"
+            android:hint="@string/profession" />
+
+        <TextView
+            android:id="@+id/tvLocation"
+            style="@style/login_edittext_style"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="8dp"
+            android:drawableLeft="@drawable/ic_location_blue"
+            android:drawableRight="@drawable/ic_right_grey"
+            android:hint="@string/location" />
+
+
+        <TextView
+            style="@style/textViewBlackSmall"
+            android:id="@+id/tvReferCodeTitle"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="5dp"
+            android:text="@string/message_refer_code"
+            android:textColor="@color/orange_grey" />
+
+        <EditText
+            android:id="@+id/tvReferCode"
+            style="@style/login_edittext_style"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="8dp"
+            android:drawableLeft="@drawable/ic_password"
+            android:gravity="top"
+            android:hint="@string/hint_refer_code"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:maxLength="140"
+            android:maxLines="1" />
+
+        <include layout="@layout/progress_loader" />
+
+        <Button
+            android:id="@+id/bSignup"
+            style="@style/login_button_style"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/sign_up" />
+
+        <TextView
+            android:id="@+id/bTnC"
+            style="@style/textViewBlackSmall"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="5dp"
+            android:text="@string/terms_conditions"
+            android:textColor="@color/orange_grey" />
+
+    </LinearLayout>
+
+</ScrollView>

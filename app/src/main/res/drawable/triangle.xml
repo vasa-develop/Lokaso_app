@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+<item>
+    <rotate
+        android:fromDegrees="-35"
+        android:toDegrees="0"
+        android:pivotX="0%"
+        android:pivotY="-10%" >
+
+
+        <shape
+            android:shape="rectangle" >
+
+            <size
+                android:height="@dimen/suggestion_detail_interest_triangle_height"
+                android:width="@dimen/suggestion_detail_interest_triangle_width" />
+
+            <solid android:color="@color/light_grey_layout" />
+        </shape>
+    </rotate>
+</item>
+
+</layer-list>

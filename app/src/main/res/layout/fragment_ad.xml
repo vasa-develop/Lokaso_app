@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/container"
+    >
+
+
+
+    <android.support.v7.widget.CardView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="@dimen/radius_suggestion"
+        app:cardElevation="@dimen/elevation_suggestion"
+        app:cardPreventCornerOverlap="false">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@color/gray_7" />
+
+        <ImageView
+            android:id="@+id/playImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_play_youtube"/>
+
+        <TextView
+            android:id="@+id/countTextView"
+            style="@style/textViewWhiteNormal"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="1/27"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/ic_gradient_right_top_black"/>
+
+        <LinearLayout
+            android:id="@+id/textLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            android:background="@color/tra_gray"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/tour_text_heading"
+                    style="@style/textViewWhiteMedium"
+                    android:gravity="center"
+                    android:minLines="1"
+                    android:text="@string/about_me"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/tour_text_body"
+                    style="@style/textViewWhiteSmall"
+                    android:gravity="center"
+                    android:minLines="2"
+                    android:maxLines="2"
+                    android:text="" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+        <View
+            style="@style/textViewWhiteNormal"
+            android:background="@drawable/gradient_right_top_black"
+            android:visibility="gone"/>
+
+
+    </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

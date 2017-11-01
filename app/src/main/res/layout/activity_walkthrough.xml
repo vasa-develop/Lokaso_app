@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/imagePager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <com.viewpagerindicator.CirclePageIndicator
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/titles"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:minHeight="10dp"
+            android:padding="2dp"
+            android:layout_marginBottom="10dp"
+            app:centered="true"
+            app:fillColor="@color/colorPrimary"
+            app:pageColor="@color/transparent"
+            app:strokeColor="@color/green"
+            app:strokeWidth="1px"
+            app:radius="4dp"
+            app:snap="false"
+            app:paddingStart="5dp"
+            app:paddingEnd="5dp"/>
+
+        <Button
+            style="@style/normal_button_style"
+            android:layout_height="40dp"
+            android:layout_gravity="bottom|center_horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="@string/let_us_start"
+            android:textStyle="normal"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:visibility="invisible"/>
+        <!--<Button
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:elevation="5dp"
+            android:gravity="center"
+            android:text="Get Started"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:visibility="invisible"/>-->
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,879 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/light_grey_background</item>
+    </style>
+
+    <style name="FullscreenTheme" parent="AppTheme">
+        <item name="android:actionBarStyle">@style/FullscreenActionBarStyle</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="metaButtonBarStyle">?android:attr/buttonBarStyle</item>
+        <item name="metaButtonBarButtonStyle">?android:attr/buttonBarButtonStyle</item>
+    </style>
+
+    <style name="FullscreenActionBarStyle" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/black_overlay</item>
+    </style>
+
+    <!-- Button-->
+
+    <style name="CustomTitle">
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+
+
+    <style name="ToolbarImageStyle">
+        <item name="android:padding">12dp</item>
+    </style>
+    <style name="ToolbarTextStyle">
+        <item name="android:padding">3dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="ToolbarTitleAppearance" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">16sp</item>
+        <!-- include other attributes you want to change: textColor, textStyle, etc -->
+    </style>
+
+    <style name="ToolbarSubtitleAppearance" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Subtitle">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+
+
+
+    <!-- Button-->
+    <style name="normal_button_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">35dp</item>
+        <item name="android:textSize">@dimen/login_btn_text_size</item>
+        <item name="android:background">@drawable/login_button</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:longClickable">false</item>
+    </style>
+
+    <style name="orange_button_style" parent="normal_button_style">
+        <item name="android:background">@drawable/background_orange</item>
+        <item name="android:textColor">@color/white_text</item>
+    </style>
+
+    <style name="toolbar_button_style" parent="normal_button_style">
+        <item name="android:background">@drawable/button_bg_round</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="login_button_style" parent="normal_button_style">
+        <item name="android:layout_height">40sp</item>
+        <item name="android:background">@mipmap/background_button_login</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="button_theme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:background">@drawable/selector_button_theme</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">14dp</item>
+    </style>
+
+    <style name="buttonBlue" parent="normal_button_style">
+        <item name="android:background">@drawable/button_blue</item>
+        <item name="android:textColor">@color/off_white</item>
+        <item name="android:longClickable">false</item>
+    </style>
+
+    <style name="normal_button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/selector_button</item>
+    </style>
+
+    <style name="facebook_button_style">
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/button_blue</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <!-- Textview-->
+    <style name="textViewMediumBold">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="textViewLargeBold">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="textViewSmall">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="textViewNormal">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="textViewMedium">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="textViewLarge">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="textViewExtraLarge">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="textViewXXL">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">22sp</item>
+    </style>
+
+    <style name="textViewXXXL">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="textViewHuge">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">27sp</item>
+    </style>
+
+    <!-- Textview LightBlue -->
+    <style name="textViewLightBlueSmall" parent="textViewSmall">
+        <item name="android:textColor">@color/light_blue_text2</item>
+    </style>
+
+    <style name="textViewLightBlueNormal" parent="textViewNormal">
+        <item name="android:textColor">@color/light_blue_text2</item>
+    </style>
+
+    <style name="textViewLightBlueMedium" parent="textViewMedium">
+        <item name="android:textColor">@color/light_blue_text2</item>
+    </style>
+
+    <style name="textViewLightBlueLarge" parent="textViewLarge">
+        <item name="android:textColor">@color/light_blue_text2</item>
+    </style>
+
+    <style name="textViewLightBlueExtraLarge" parent="textViewExtraLarge">
+        <item name="android:textColor">@color/light_blue_text2</item>
+    </style>
+
+    <style name="textViewLightBlueXXL" parent="textViewXXL">
+        <item name="android:textColor">@color/light_blue_text2</item>
+    </style>
+
+    <style name="textViewLightBlueXXXL" parent="textViewXXXL">
+        <item name="android:textColor">@color/light_blue_text2</item>
+    </style>
+
+    <!-- Textview BlueGrey -->
+    <style name="textViewBlueGreySmall" parent="textViewSmall">
+        <item name="android:textColor">@color/blue_grey</item>
+    </style>
+
+    <style name="textViewBlueGreyNormal" parent="textViewNormal">
+        <item name="android:textColor">@color/blue_grey</item>
+    </style>
+
+    <style name="textViewBlueGreyMedium" parent="textViewMedium">
+        <item name="android:textColor">@color/blue_grey</item>
+    </style>
+
+    <style name="textViewBlueGreyLarge" parent="textViewLarge">
+        <item name="android:textColor">@color/blue_grey</item>
+    </style>
+
+    <style name="textViewBlueGreyExtraLarge" parent="textViewExtraLarge">
+        <item name="android:textColor">@color/blue_grey</item>
+    </style>
+
+    <style name="textViewBlueGreyXXL" parent="textViewXXL">
+        <item name="android:textColor">@color/blue_grey</item>
+    </style>
+
+    <style name="textViewBlueGreyXXXL" parent="textViewXXXL">
+        <item name="android:textColor">@color/blue_grey</item>
+
+    </style>
+
+    <!-- Textview Green -->
+    <style name="textViewGreenSmall" parent="textViewSmall">
+        <item name="android:textColor">@color/green_text</item>
+    </style>
+
+    <style name="textViewGreenNormal" parent="textViewNormal">
+        <item name="android:textColor">@color/green_text</item>
+    </style>
+
+    <style name="textViewGreenMedium" parent="textViewMedium">
+        <item name="android:textColor">@color/green_text</item>
+    </style>
+
+    <style name="textViewGreenLarge" parent="textViewLarge">
+        <item name="android:textColor">@color/green_text</item>
+    </style>
+
+    <style name="textViewGreenExtraLarge" parent="textViewExtraLarge">
+        <item name="android:textColor">@color/green_text</item>
+    </style>
+
+    <style name="textViewGreenXXL" parent="textViewXXL">
+        <item name="android:textColor">@color/green_text</item>
+    </style>
+
+    <style name="textViewGreenXXXL" parent="textViewXXXL">
+        <item name="android:textColor">@color/green_text</item>
+    </style>
+
+    <!-- Textview Grey -->
+    <style name="textViewGreySmall" parent="textViewSmall">
+        <item name="android:textColor">@color/gray_text</item>
+    </style>
+
+    <style name="textViewGreyNormal" parent="textViewNormal">
+        <item name="android:textColor">@color/gray_text</item>
+    </style>
+
+    <style name="textViewGreyMedium" parent="textViewMedium">
+        <item name="android:textColor">@color/gray_text</item>
+        <item name="android:linksClickable">true</item>
+        <item name="android:autoLink">all</item>
+        <item name="android:textColorLink">@color/colorPrimary</item>
+    </style>
+
+    <style name="textViewGreyLarge" parent="textViewLarge">
+        <item name="android:textColor">@color/gray_text</item>
+    </style>
+
+    <style name="textViewGreyExtraLarge" parent="textViewExtraLarge">
+        <item name="android:textColor">@color/gray_text</item>
+    </style>
+
+    <style name="textViewGreyXXL" parent="textViewXXL">
+        <item name="android:textColor">@color/gray_text</item>
+    </style>
+
+    <style name="textViewGreyXXXL" parent="textViewXXXL">
+        <item name="android:textColor">@color/gray_text</item>
+    </style>
+
+    <!-- Textview LightGrey -->
+    <style name="textViewLightGreySmall" parent="textViewSmall">
+        <item name="android:textColor">@color/light_gray_text</item>
+    </style>
+
+    <style name="textViewLightGreyNormal" parent="textViewNormal">
+        <item name="android:textColor">@color/light_gray_text</item>
+    </style>
+
+    <style name="textViewLightGreyMedium" parent="textViewMedium">
+        <item name="android:textColor">@color/light_gray_text</item>
+    </style>
+
+    <style name="textViewLightGreyLarge" parent="textViewLarge">
+        <item name="android:textColor">@color/light_gray_text</item>
+    </style>
+
+    <style name="textViewLightGreyExtraLarge" parent="textViewExtraLarge">
+        <item name="android:textColor">@color/light_gray_text</item>
+    </style>
+
+    <style name="textViewLightGreyXXL" parent="textViewXXL">
+        <item name="android:textColor">@color/light_gray_text</item>
+    </style>
+
+    <style name="textViewLightGreyXXXL" parent="textViewXXXL">
+        <item name="android:textColor">@color/light_gray_text</item>
+    </style>
+
+    <!-- Textview Orange -->
+    <style name="textViewOrangeSmall" parent="textViewSmall">
+        <item name="android:textColor">@color/orange_text</item>
+    </style>
+
+    <style name="textViewOrangeNormal" parent="textViewNormal">
+        <item name="android:textColor">@color/orange_text</item>
+    </style>
+
+    <style name="textViewOrangeMedium" parent="textViewMedium">
+        <item name="android:textColor">@color/orange_text</item>
+    </style>
+
+    <style name="textViewOrangeLarge" parent="textViewLarge">
+        <item name="android:textColor">@color/orange_text</item>
+    </style>
+
+    <style name="textViewOrangeExtraLarge" parent="textViewExtraLarge">
+        <item name="android:textColor">@color/orange_text</item>
+    </style>
+
+    <style name="textViewOrangeXXL" parent="textViewXXL">
+        <item name="android:textColor">@color/orange_text</item>
+    </style>
+
+    <style name="textViewOrangeXXXL" parent="textViewXXXL">
+        <item name="android:textColor">@color/orange_text</item>
+    </style>
+
+
+    <style name="textViewRedMedium" parent="textViewMedium">
+        <item name="android:textColor">@color/red</item>
+    </style>
+
+
+    <style name="textViewGrayLarge" parent="textViewLarge">
+        <item name="android:textColor">@color/gray_3</item>
+    </style>
+
+    <style name="textViewGrayDarkSmall" parent="textViewSmall">
+        <item name="android:textColor">@color/gray_3</item>
+    </style>
+    <style name="textViewGrayDarkNormal" parent="textViewNormal">
+        <item name="android:textColor">@color/gray_3</item>
+    </style>
+
+    <style name="textViewGrayDarkMedium" parent="textViewMedium">
+        <item name="android:textColor">@color/gray_3</item>
+    </style>
+
+    <style name="textViewGrayColorMedium" parent="textViewMedium">
+        <item name="android:textColor">@color/gray_7</item>
+    </style>
+    <style name="textViewGrayColorNormal" parent="textViewNormal">
+        <item name="android:textColor">@color/gray_7</item>
+    </style>
+
+    <style name="textViewGrayLite" parent="textViewNormal">
+        <item name="android:textColor">@color/gray_a</item>
+    </style>
+
+    <style name="textViewOrangeNav" parent="textViewLarge">
+        <item name="android:textColor">@color/orange_text</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+    </style>
+
+
+    <style name="textViewBottomLike">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/gray_bottom</item>
+    </style>
+
+
+    <style name="imageBottom">
+        <item name="android:background">@color/transparent</item>
+        <item name="android:padding">5dp</item>
+        <!--<item name="android:tint">@color/selector_image_theme</item>-->
+        <!--<item name="android:tint">@color/gray_bottom</item>-->
+    </style>
+
+
+    <style name="imageView">
+        <!--<item name="android:tint">@color/selector_image_theme</item>-->
+        <item name="android:tint">@color/gray_bottom</item>
+    </style>
+
+    <style name="imageBottomLike" parent="imageBottom">
+        <item name="tint">@color/selector_image_like</item>
+        <!--<item name="android:tint">@color/gray_bottom</item>-->
+    </style>
+
+    <style name="imageBottomLike1">
+        <item name="tint">@color/selector_image_like</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:padding">5dp</item>
+        <!--<item name="android:tint">@color/gray_bottom</item>-->
+    </style>
+
+    <style name="imageViewDrawer">
+        <!--<item name="android:tint">@color/selector_image_theme</item>-->
+        <item name="android:tint">@color/gray_text</item>
+    </style>
+
+    <!-- Textview white -->
+    <style name="textViewBottomLayout">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:hint">@string/queries_around1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/white_text</item>
+    </style>
+
+    <!-- Textview white -->
+    <style name="textViewWhiteSmall" parent="textViewSmall">
+        <item name="android:textColor">@color/white_text</item>
+    </style>
+
+    <style name="textViewWhiteNormal" parent="textViewNormal">
+        <item name="android:textColor">@color/white_text</item>
+    </style>
+
+    <style name="textViewWhiteMedium" parent="textViewMedium">
+        <item name="android:textColor">@color/white_text</item>
+    </style>
+
+    <style name="textViewWhiteLarge" parent="textViewLarge">
+        <item name="android:textColor">@color/white_text</item>
+    </style>
+
+    <style name="textViewWhiteExtraLarge" parent="textViewExtraLarge">
+        <item name="android:textColor">@color/white_text</item>
+    </style>
+
+    <style name="textViewWhiteXXL" parent="textViewXXL">
+        <item name="android:textColor">@color/white_text</item>
+    </style>
+
+    <style name="textViewWhiteXXXL" parent="textViewXXXL">
+        <item name="android:textColor">@color/white_text</item>
+    </style>
+
+    <!-- Textview black -->
+    <style name="textViewBlackSmall" parent="textViewSmall">
+        <item name="android:textColor">@color/black_text</item>
+    </style>
+
+    <style name="textViewBlackNormal" parent="textViewNormal">
+        <item name="android:textColor">@color/black_text</item>
+    </style>
+
+    <style name="textViewBlackMedium" parent="textViewMedium">
+        <item name="android:textColor">@color/black_text</item>
+    </style>
+
+    <style name="textViewNavBlackLarge" parent="textViewLarge">
+        <item name="android:textColor">@color/nav_black</item>
+    </style>
+
+    <style name="textViewBlackLarge" parent="textViewLarge">
+        <item name="android:textColor">@color/black_text</item>
+    </style>
+
+    <style name="textViewBlackExtraLarge" parent="textViewExtraLarge">
+        <item name="android:textColor">@color/black_text</item>
+    </style>
+
+    <!-- This is for User list -->
+    <style name="textViewBlackXXL" parent="textViewXXL">
+        <item name="android:textColor">@color/gray_7</item>
+    </style>
+
+    <style name="textViewBlackXXXL" parent="textViewXXXL">
+        <item name="android:textColor">@color/black_text</item>
+    </style>
+
+    <style name="textViewBlackHuge" parent="textViewHuge">
+        <item name="android:textColor">@color/black_text</item>
+    </style>
+
+    <style name="textViewBlackTitle" parent="textViewBlackExtraLarge">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="textViewGreySubTitle" parent="textViewLarge">
+        <item name="android:textColor">@color/grey</item>
+    </style>
+
+    <style name="textViewLightBlackSubTitle" parent="textViewLarge">
+        <item name="android:textColor">@color/light_black</item>
+    </style>
+
+    <style name="textViewItalic" parent="textViewMedium">
+        <item name="android:textColor">@color/light_black</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <style name="textViewBlueLightTitle" parent="textViewXXL">
+        <item name="android:textColor">@color/gray_5</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="textViewBlueLight" parent="textViewNormal">
+        <item name="android:textColor">@color/blue_facebook</item>
+    </style>
+
+    <style name="cursorColor">
+        <item name="colorAccent">@color/white</item>
+       <!-- <item name="android:textCursorDrawable">@drawable/cursor</item>-->
+    </style>
+
+    <style name="textViewDialogButton" parent="textViewMedium">
+        <item name="android:textColor">@color/white_text</item>
+        <item name="android:textSize">17dp</item>
+    </style>
+
+    <style name="imageViewDialogButton">
+        <item name="android:layout_width">@dimen/image_size_beside_text</item>
+        <item name="android:layout_height">@dimen/image_size_beside_text</item>
+        <item name="android:tint">@color/white_text</item>
+        <item name="android:scaleType">fitCenter</item>
+    </style>
+
+    <style name="image_tip_style11">
+        <item name="tint">@color/selector_image_like</item>
+    </style>
+
+    <style name="image_tip_layout_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_weight">1</item>
+        <!--<item name="android:background">@color/gray_f</item>-->
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+    </style>
+
+    <style name="image_tip_user_style">
+        <item name="android:layout_width">32dp</item>
+        <item name="android:layout_height">32dp</item>
+        <!--<item name="android:background">@color/transparent</item>-->
+        <item name="android:padding">0dp</item>
+        <item name="tint">@color/selector_image_like</item>
+        <item name="android:state_selected">true</item>
+    </style>
+
+    <style name="image_tip_style">
+        <item name="android:layout_width">32dp</item>
+        <item name="android:layout_height">32dp</item>
+        <!--<item name="android:background">@color/transparent</item>-->
+        <item name="android:padding">5dp</item>
+        <item name="tint">@color/selector_image_like</item>
+    </style>
+
+
+    <style name="image_follow_layout_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+    </style>
+    <style name="image_follow_style">
+        <item name="android:layout_width">32dp</item>
+        <item name="android:layout_height">32dp</item>
+        <item name="android:padding">5dp</item>
+        <item name="tint">@color/selector_image_follow</item>
+    </style>
+    <style name="image_follow_text_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:textColor">@color/selector_image_follow</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+
+    <!-- Textview black -->
+    <style name="text_tip_location" parent="textViewSmall">
+        <item name="android:textColor">@color/gray_7</item>
+    </style>
+
+
+<!--
+    <style name="textViewExtraLarge">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">20sp</item>
+    </style>-->
+
+
+
+    <style name="textViewCountLayout">
+        <item name="android:layout_width">26dp</item>
+        <item name="android:layout_height">26dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/circle_red_fill</item>
+    </style>
+
+    <style name="textViewCount">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">11dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:hint">100</item>
+    </style>
+
+    <style name="textViewTipFavCountStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">15dp</item>
+        <item name="android:textColor">@color/gray_tip</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="textViewTabCount">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">21dp</item>
+        <item name="android:textColor">@color/black_text</item>
+    </style>
+
+    <style name="textViewTabTitle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">@color/gray_7</item>
+    </style>
+
+    <style name="textViewListEmpty">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/gray_7</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="textViewLocation">
+        <item name="android:textSize">12sp</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="textViewLocationLayout">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@color/gray_7</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:paddingBottom">2dp</item>
+    </style>
+
+    <style name="textViewInterest">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/gray_3</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_gravity">center_vertical|right</item>
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:paddingBottom">2dp</item>
+        <item name="android:paddingLeft">25dp</item>
+        <item name="android:paddingRight">25dp</item>
+        <item name="android:background">@drawable/ic_interest_bg</item>
+    </style>
+
+    <style name="filter_sort_layout_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="filter_button_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="filter_subtitle_text_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/gray_f</item>
+        <item name="android:padding">8dp</item>
+    </style>
+
+    <style name="filter_sort_image_style">
+        <item name="android:layout_width">32dp</item>
+        <item name="android:layout_height">32dp</item>
+        <item name="android:padding">5dp</item>
+        <!--<item name="android:tint">@color/gray_9</item>-->
+        <item name="tint">@color/selector_image_like</item>
+    </style>
+
+    <style name="filter_sort_text_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:textColor">@color/selector_image_like</item>
+        <!--<item name="android:textColor">@color/gray_9</item>-->
+    </style>
+
+    <style name="filter_checkbox_text_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:padding">5dp</item>
+        <!--<item name="android:textColor">@color/selector_image_like</item>-->
+        <item name="android:textColor">@color/gray_7</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="filter_checkbox_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text"></item>
+        <item name="android:clickable">false</item>
+    </style>
+
+    <!-- For checkbox, use as theme. Currently not required, as buttonTint does the same work -->
+    <style name="checkBoxStyle">
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="colorControlHighlight">@color/colorPrimary</item>
+        <item name="android:textColorSecondary">@color/colorPrimary</item>
+    </style>
+
+    <style name="filter_checkbox_layout_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:padding">9dp</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+    </style>
+
+    <!-- Edittext -->
+    <style name="normal_edittext_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorHint">@color/gray_d</item>
+        <item name="android:textCursorDrawable">@drawable/text_cursor_gray_3</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:background">@drawable/post_background</item>
+        <item name="android:padding">9dp</item>
+    </style>
+
+    <style name="normal_edittext_nopadding_style" parent="normal_edittext_style">
+        <item name="android:background">@drawable/edittext_background_nopadding</item>
+    </style>
+
+    <style name="login_edittext_style" parent="normal_edittext_style">
+        <item name="android:background">@drawable/edittext_login</item>
+        <item name="android:drawablePadding">10dp</item>
+        <item name="android:textColorHint">@color/blue_grey</item>
+        <item name="android:textColor">@color/off_white</item>
+        <item name="android:textCursorDrawable">@null</item>
+    </style>
+
+    <style name="facebook_text_style">
+        <item name="android:textSize">@dimen/login_btn_text_size</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="core_edittext_style" parent="normal_edittext_style">
+        <item name="android:textColor">@color/black_text</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:background">@null</item>
+        <item name="android:padding">2dp</item>
+        <item name="android:inputType">textCapSentences</item>
+    </style>
+
+    <style name="core_edittext_style_textview" parent="normal_edittext_style">
+        <item name="android:textColor">@color/black_text</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:background">@null</item>
+        <item name="android:padding">2dp</item>
+    </style>
+
+    <style name="core_edittext_style2" parent="core_edittext_style">
+        <item name="android:textColor">@color/gray_text</item>
+        <item name="android:textColorHint">@color/gray_9</item>
+    </style>
+
+    <style name="core_edittext_style3" parent="core_edittext_style">
+        <item name="android:textColor">@color/off_white</item>
+        <item name="android:textColorHint">@color/gray_text</item>
+    </style>
+
+    <style name="core_edittext_style4" parent="core_edittext_style">
+        <item name="android:textColor">@color/black_text</item>
+        <item name="android:textColorHint">@color/gray_text_hint</item>
+        <item name="android:background">@drawable/background_light_grey</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <!--- Spinner -->
+    <style name="spinner_normal">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!-- Line -->
+    <style name="line_black">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.7sp</item>
+        <item name="android:background">@color/black</item>
+    </style>
+
+    <style name="line_blue_grey" parent="line_black">
+        <item name="android:background">@color/blue_grey</item>
+    </style>
+
+    <style name="line_grey" parent="line_black">
+        <item name="android:background">@color/gray_text</item>
+    </style>
+
+    <style name="line_shadow" parent="line_black">
+        <item name="android:layout_height">1.5sp</item>
+        <item name="android:background">@drawable/ic_shadow</item>
+    </style>
+
+    <style name="line_green" parent="line_black">
+        <item name="android:layout_height">1sp</item>
+        <item name="android:background">@color/line_green</item>
+    </style>
+
+    <style name="DialogScale" parent="@android:style/Theme.Holo.Light.Dialog">
+        <item name="android:windowAnimationStyle">@style/DialogScaleAnimation</item>
+    </style>
+
+    <style name="DialogScaleAnimation">
+        <item name="android:windowEnterAnimation">@anim/scale_more</item>
+        <item name="android:windowExitAnimation">@anim/fade_out</item>
+    </style>
+</resources>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group>
+
+        <item
+            android:id="@+id/idName"
+            android:title="@string/name" />
+
+        <item
+            android:id="@+id/idDistance"
+            android:title="@string/distance" />
+
+        <item
+            android:id="@+id/idCredit"
+            android:title="@string/credit" />
+
+    </group>
+
+</menu>

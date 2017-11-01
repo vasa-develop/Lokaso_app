@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/container"
+    android:background="@color/white">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/walkthrough1" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tour_text_heading"
+                    style="@style/textViewBlackXXL"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:minLines="1"
+                    android:text="@string/about_me"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/tour_text_body"
+                    style="@style/textViewGreySmall"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center_horizontal"
+                    android:minLines="3"
+                    android:textSize="18sp"
+                    android:text="@string/walkthrough_screen1" />
+
+            </LinearLayout>
+
+
+            <com.viewpagerindicator.CirclePageIndicator
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:minHeight="10dp"
+                android:padding="2dp"
+                android:layout_marginBottom="10dp"
+                app:centered="true"
+                app:fillColor="@color/colorPrimary"
+                app:pageColor="@color/transparent"
+                app:strokeColor="@color/green"
+                app:strokeWidth="1px"
+                app:radius="4dp"
+                app:snap="false"
+                app:paddingStart="5dp"
+                app:paddingEnd="5dp"
+                android:visibility="invisible"/>
+
+            <!--<Button
+                android:id="@+id/bStart"
+                style="@style/normal_button_style"
+                android:layout_height="40dp"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:text="@string/let_us_start"
+                android:textStyle="bold" />-->
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bStart"
+            style="@style/normal_button_style"
+            android:layout_height="40dp"
+            android:layout_gravity="bottom|center_horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="@string/let_us_start"
+            android:textStyle="normal"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

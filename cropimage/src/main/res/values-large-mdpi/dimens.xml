@@ -1,0 +1,32 @@
+<resources>
+
+    <dimen name="navigation_drawer_width">320dp</dimen>
+
+    <dimen name="pad_1dp">1dp</dimen>
+    <dimen name="pad_3dp">4dp</dimen>
+    <dimen name="pad_5dp">6dp</dimen>
+    <dimen name="pad_10dp">12dp</dimen>
+    <dimen name="pad_15dp">17dp</dimen>
+    <dimen name="pad_20dp">23dp</dimen>
+    <dimen name="pad_30dp">33dp</dimen>
+    <dimen name="pad_40dp">44dp</dimen>
+    <dimen name="pad_50dp">55dp</dimen>
+    <dimen name="pad_75dp">80dp</dimen>
+    <dimen name="pad_100dp">105dp</dimen>
+    <dimen name="pad_125dp">130dp</dimen>
+    <dimen name="pad_140dp">150dp</dimen>
+    <dimen name="pad_150dp">160dp</dimen>
+    <dimen name="pad_200dp">210dp</dimen>
+    <dimen name="pad_250dp">260dp</dimen>
+
+    <dimen name="txt_8sp">10sp</dimen>
+    <dimen name="txt_10sp">12sp</dimen>
+    <dimen name="txt_12sp">14sp</dimen>
+    <dimen name="txt_14sp">16sp</dimen>
+    <dimen name="txt_16sp">18sp</dimen>
+    <dimen name="txt_18sp">20sp</dimen>
+    <dimen name="txt_20sp">22sp</dimen>
+    <dimen name="txt_22sp">24sp</dimen>
+
+
+</resources>

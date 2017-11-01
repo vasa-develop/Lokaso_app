@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="horizontal"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp">
+
+    <RelativeLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ivPic"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/user_placeholder" />
+
+        <RelativeLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/ivPic">
+
+            <TextView
+                android:id="@+id/tvName"
+                style="@style/textViewOrangeLarge"
+                android:layout_width="match_parent"
+                android:layout_toLeftOf="@+id/tvDate"
+                android:text="@string/name" />
+
+            <com.github.curioustechizen.ago.RelativeTimeTextView
+                android:id="@+id/tvDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:hint="@string/user_name"
+                android:singleLine="true"
+                android:text="@string/date"
+                android:textColor="@color/gray_text"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tvComment"
+                style="@style/textViewGreyMedium"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/tvName"
+                android:layout_marginTop="4dp"
+                android:layout_toLeftOf="@+id/bFollow"
+                android:text="@string/comment" />
+
+            <ToggleButton
+                android:id="@+id/bFollow"
+                style="@style/login_button_style"
+                android:layout_width="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textOff="@string/follow"
+                android:textOn="@string/un_follow"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvProfession"
+                style="@style/textViewGreyMedium"
+                android:layout_below="@+id/tvName"
+                android:layout_marginTop="4dp"
+                android:text="@string/profession"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvProfession"
+                android:layout_marginTop="4dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tvCreditPoints"
+                    style="@style/textViewGreyNormal"
+                    android:layout_weight="1"
+                    android:padding="2dp"
+                    android:text="280 Credit points" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="40dp"
+                    android:background="@color/grey" />
+
+                <TextView
+                    android:id="@+id/tvDistance"
+                    style="@style/textViewGreyNormal"
+                    android:layout_weight="1"
+                    android:padding="2dp"
+                    android:text="4km away" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="40dp"
+                    android:background="@color/grey" />
+
+                <TextView
+                    android:id="@+id/tvQueriesAttended"
+                    style="@style/textViewGreyNormal"
+                    android:layout_weight="1"
+                    android:padding="2dp"
+                    android:text="10 Queries attended" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <View
+        style="@style/line_grey"
+        android:layout_below="@+id/layout1"
+        android:layout_marginTop="12dp" />
+
+</RelativeLayout>

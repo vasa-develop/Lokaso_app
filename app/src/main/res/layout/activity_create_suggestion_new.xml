@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvSuggestHint"
+                    style="@style/textViewWhiteLarge"
+                    android:layout_marginTop="12dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="@string/suggest_one_thing_around_you_that_a_traveler_shouldn_t_miss_out" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true">
+
+
+                        <com.lokaso.custom.SquareImageView
+                            android:id="@+id/dummySq"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:focusable="true"
+                            android:scaleType="fitXY"
+                            android:background="@color/red"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="2"
+                            android:background="@color/yellow"
+                            android:layout_alignTop="@+id/dummySq"
+                            android:layout_alignBottom="@+id/dummySq">
+
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:background="@color/red" />
+
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:background="@color/red"/>
+
+                        </LinearLayout>
+
+                        <android.support.v7.widget.CardView
+                        android:id="@+id/cardView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:cardCornerRadius="@dimen/radius_query"
+                        app:cardElevation="@dimen/elevation_query"
+                        app:contentPadding="5dp"
+                            android:layout_margin="15dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/translucent_white">
+
+                            <ImageButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:background="@drawable/ic_placeholder" />
+
+                            <com.lokaso.custom.SquareImageView
+                                android:id="@+id/ivPic"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:focusable="true"
+                                android:scaleType="fitXY"
+                                android:layout_margin="15dp"
+                                android:visibility="visible"/>
+
+                            <ImageButton
+                                android:id="@+id/bEdit"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_margin="10dp"
+                                android:background="@drawable/circle_translucent"
+                                android:drawingCacheQuality="auto"
+                                android:padding="8dp"
+                                android:src="@drawable/ic_edit"
+                                android:visibility="visible" />
+
+                            <EditText
+                                android:id="@+id/tvCaption"
+                                style="@style/core_edittext_style4"
+                                android:layout_alignParentBottom="true"
+                                android:background="@drawable/background_gradience"
+                                android:hint="@string/enter_caption"
+                                android:inputType="textCapSentences"
+                                android:paddingBottom="5dp"
+                                android:paddingLeft="20dp"
+                                android:paddingRight="20dp"
+                                android:paddingTop="5dp"
+                                android:singleLine="true"
+                                android:textColor="@color/white"
+                                android:textColorHint="@color/gray_f"
+                                android:textSize="16sp" />
+
+                        </RelativeLayout>
+
+
+                    </android.support.v7.widget.CardView>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+
+
+
+                <TextView
+                    android:id="@+id/tvHint"
+                    style="@style/textViewGreySmall"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="@string/you_can_add_one_thing_in_each_category_for_multiple_places_credit_points_50_for_each_suggestion"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvLocationHint"
+                        style="@style/textViewOrangeMedium"
+                        android:layout_marginTop="5dp"
+                        android:drawablePadding="10dp"
+                        android:gravity="center"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="@string/select_location" />
+
+                    <TextView
+                        android:id="@+id/tvLocation"
+                        style="@style/core_edittext_style4"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:hint="@string/location"
+                        android:padding="10dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvInterestHint"
+                        style="@style/textViewOrangeMedium"
+                        android:layout_marginTop="5dp"
+                        android:drawablePadding="10dp"
+                        android:gravity="center"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="@string/select_category" />
+
+                    <TextView
+                        android:id="@+id/tvInterest"
+                        style="@style/core_edittext_style4"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:hint="@string/category"
+                        android:padding="10dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvSuggestionHint"
+                        style="@style/textViewOrangeMedium"
+                        android:layout_marginTop="5dp"
+                        android:drawablePadding="10dp"
+                        android:drawableRight="@drawable/ic_suggestion"
+                        android:gravity="center"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="@string/your_suggestion" />
+
+                    <EditText
+                        android:id="@+id/tvSuggestion"
+                        style="@style/core_edittext_style4"
+                        android:layout_marginTop="5dp"
+                        android:gravity="left|top"
+                        android:hint="@string/if_you_are_around_miramar_don_t_miss_the_almond_coffee_mushroom_sandwich_at_cafe_basil"
+                        android:inputType="textMultiLine|textCapSentences"
+                        android:lines="3"
+                        android:maxLength="140"
+                        android:padding="10dp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvImageHint"
+                    style="@style/textViewOrangeMedium"
+                    android:layout_marginTop="12dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="@string/add_a_picture" />
+
+
+
+                <!--<LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvCaptionHint"
+                        style="@style/textViewGreyMedium"
+                        android:layout_marginTop="5dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="@string/caption" />
+
+                    <EditText
+                        android:id="@+id/tvCaption"
+                        style="@style/core_edittext_style2"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/translucent_white"
+                        android:hint="@string/enter_caption"
+                        android:inputType="textCapSentences"
+                        android:padding="10dp"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp" />
+
+                </LinearLayout>-->
+
+                <TextView
+                    android:id="@+id/tvCreditHint"
+                    style="@style/textViewGreySmall"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="@string/credit_points_50_suggestions_with_pics_attract_more_eyes"
+                    android:visibility="gone" />
+
+                <!--<android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:visibility="gone" />-->
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/bSubmit"
+                        style="@style/orange_button_style"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="12dp"
+                        android:inputType="text"
+                        android:onClick="onSubmitClick"
+                        android:text="@string/done" />
+
+                    <Button
+                        android:id="@+id/bMore"
+                        style="@style/orange_button_style"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_toRightOf="@+id/bSubmit"
+                        android:inputType="text"
+                        android:onClick="onMoreClick"
+                        android:text="@string/add_more" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

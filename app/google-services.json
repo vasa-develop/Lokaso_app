@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "611555042927",
+    "firebase_url": "https://lokaso-146908.firebaseio.com",
+    "project_id": "lokaso-146908",
+    "storage_bucket": "lokaso-146908.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:611555042927:android:d556cd1ccc2cf76c",
+        "android_client_info": {
+          "package_name": "com.lokaso"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "611555042927-3cbmfe2d8kc47vvbtc5487emm3m5p92o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lokaso",
+            "certificate_hash": "D561708D78971D8BBFE8BF309ACE46AD0C581169"
+          }
+        },
+        {
+          "client_id": "611555042927-artn13kheqf71sfffq1v8b2ofocju8b5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJk0q_eas9M3qF2Wgw2t3VV9HujHGTXTY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "611555042927-artn13kheqf71sfffq1v8b2ofocju8b5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

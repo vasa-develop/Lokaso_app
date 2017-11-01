@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/headerLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="240dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="@color/colorPrimary"
+            android:orientation="horizontal" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+            <TextView
+                android:id="@+id/tvProfession"
+                style="@style/textViewOrangeNormal"
+                android:layout_marginLeft="130dp"
+                android:layout_marginTop="4dp"
+                android:text="@string/profession" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/colorPrimary"
+            android:orientation="horizontal" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="160dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/ivPic"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/user_placeholder"
+                app:civ_border_color="@color/colorPrimary"
+                app:civ_border_width="4dp" />
+
+            <TextView
+                android:id="@+id/tvName"
+                style="@style/textViewWhiteExtraLarge"
+                android:layout_height="50dp"
+                android:layout_marginLeft="130dp"
+                android:gravity="bottom"
+                android:text="@string/name" />
+
+            <RelativeLayout
+                android:id="@+id/layoutAction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ivPic"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp">
+
+                <RelativeLayout
+                    android:id="@+id/layoutDiscovery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp">
+
+                    <TextView
+                        android:id="@+id/tvDiscoveryCount"
+                        style="@style/textViewGreyXXL"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:text="@string/_0" />
+
+                    <TextView
+                        android:id="@+id/tvDiscovery"
+                        style="@style/textViewGreyNormal"
+                        android:layout_below="@+id/tvDiscoveryCount"
+                        android:gravity="center"
+                        android:text="@string/discoveries" />
+
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/line1"
+                    android:layout_width="0.7dp"
+                    android:layout_height="25dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toRightOf="@+id/layoutDiscovery"
+                    android:background="@color/line_green"
+                    android:visibility="gone" />
+
+                <RelativeLayout
+                    android:id="@+id/layoutQuery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:layout_toRightOf="@+id/line1">
+
+                    <TextView
+                        android:id="@+id/tvQueryCount"
+                        style="@style/textViewGreyXXL"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:text="@string/_0" />
+
+                    <TextView
+                        android:id="@+id/tvQuery"
+                        style="@style/textViewGreyNormal"
+                        android:layout_below="@+id/tvQueryCount"
+                        android:gravity="center"
+                        android:text="@string/queries" />
+
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/line2"
+                    android:layout_width="0.7dp"
+                    android:layout_height="25dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toRightOf="@+id/layoutQuery"
+                    android:background="@color/line_green"
+                    android:visibility="gone" />
+
+                <RelativeLayout
+                    android:id="@+id/layoutFollow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/line2">
+
+                    <TextView
+                        android:id="@+id/tvFollowersCount"
+                        style="@style/textViewGreyXXL"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:text="@string/_0" />
+
+                    <TextView
+                        android:id="@+id/tvFollowers"
+                        style="@style/textViewGreyNormal"
+                        android:layout_below="@+id/tvFollowersCount"
+                        android:gravity="center"
+                        android:text="@string/followers" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        style="@style/line_green"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
+
+</RelativeLayout><!--
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="220dp"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/ivPic"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/user_placeholder" />
+
+    <RelativeLayout
+        android:id="@+id/layoutProfile"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_toRightOf="@+id/ivPic"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tvName"
+            style="@style/textViewBlackLarge"
+            android:layout_marginTop="4dp"
+            android:text="@string/username" />
+
+        <TextView
+            android:id="@+id/tvProfession"
+            style="@style/textViewBlackMedium"
+            android:layout_below="@+id/tvName"
+            android:layout_marginTop="4dp"
+            android:text="@string/profession" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivPic"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp">
+
+        <RelativeLayout
+            android:id="@+id/layoutDiscovery"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginRight="10dp">
+
+            <TextView
+                android:id="@+id/tvDiscoveryCount"
+                style="@style/textViewBlackNormal"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="@string/_0" />
+
+            <TextView
+                android:id="@+id/tvDiscovery"
+                style="@style/textViewBlackNormal"
+                android:layout_below="@+id/tvDiscoveryCount"
+                android:gravity="center"
+                android:text="@string/discoveries" />
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/line1"
+            android:layout_width="0.7dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/layoutDiscovery"
+            android:background="@color/line_green" />
+
+        <RelativeLayout
+            android:id="@+id/layoutQuery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/line1">
+
+            <TextView
+                android:id="@+id/tvQueryCount"
+                style="@style/textViewBlackNormal"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="@string/_0" />
+
+            <TextView
+                android:id="@+id/tvQuery"
+                style="@style/textViewBlackNormal"
+                android:layout_below="@+id/tvQueryCount"
+                android:gravity="center"
+                android:text="@string/queries" />
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/line2"
+            android:layout_width="0.7dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/layoutQuery"
+            android:background="@color/line_green" />
+
+        <RelativeLayout
+            android:id="@+id/layoutFollow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/line2">
+
+            <TextView
+                android:id="@+id/tvFollowersCount"
+                style="@style/textViewBlackNormal"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="@string/_0" />
+
+            <TextView
+                android:id="@+id/tvFollowers"
+                style="@style/textViewBlackNormal"
+                android:layout_below="@+id/tvFollowersCount"
+                android:gravity="center"
+                android:text="@string/followers" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <View
+        style="@style/line_green"
+        android:layout_below="@+id/layout"
+        android:layout_marginTop="10dp" />
+
+</RelativeLayout>-->

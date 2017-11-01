@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background">#E5ECEE</color>
+    <color name="black">#000000</color>
+    <color name="blue">#0000FF</color>
+    <color name="color_accent">#f99303</color>
+    <color name="color_primary">#ee900a</color>
+    <color name="color_primary_dark">#bf7c1d</color>
+    <color name="dark_gray">#FF909090</color>
+    <color name="darker_gray">#FFB0B0B0</color>
+    <color name="graay">#FFB3B3B3</color>
+    <color name="gray">#FFB3B3B3</color>
+    <color name="gray_3">#303030</color>
+    <color name="gray_5">#505050</color>
+    <color name="gray_7">#707070</color>
+    <color name="gray_9">#909090</color>
+    <color name="gray_a">#A0A0A0</color>
+    <color name="gray_b">#B0B0B0</color>
+    <color name="gray_d">#D0D0D0</color>
+    <color name="gray_e">#E0E0E0</color>
+    <color name="gray_f">#F0F0F0</color>
+    <color name="green">#23cf34</color>
+    <color name="green_android">#a4c739</color>
+    <color name="grey">#FF909090</color>
+    <color name="lite_blue">#4E78A0</color>
+    <color name="off_white">#F0F0F0</color>
+    <color name="orange">#E47833</color>
+    <color name="theme_color">@color/color_primary</color>
+    <color name="theme_color_click">#a0ee900a</color>
+    <color name="theme_color_trans">@color/theme_color_click</color>
+    <color name="theme_color_underline">@color/color_primary_dark</color>
+    <color name="tra_gray">#AA000000</color>
+    <color name="tra_white">#AAffffff</color>
+    <color name="transparent">#00000000</color>
+    <color name="white">#ffffff</color>
+    <color name="window_background">#FFF5F5F5</color>
+    <dimen name="pad_100dp">100dp</dimen>
+    <dimen name="pad_10dp">10dp</dimen>
+    <dimen name="pad_125dp">125dp</dimen>
+    <dimen name="pad_140dp">150dp</dimen>
+    <dimen name="pad_150dp">160dp</dimen>
+    <dimen name="pad_15dp">15dp</dimen>
+    <dimen name="pad_1dp">1dp</dimen>
+    <dimen name="pad_200dp">200dp</dimen>
+    <dimen name="pad_20dp">20dp</dimen>
+    <dimen name="pad_250dp">250dp</dimen>
+    <dimen name="pad_30dp">30dp</dimen>
+    <dimen name="pad_3dp">3dp</dimen>
+    <dimen name="pad_40dp">40dp</dimen>
+    <dimen name="pad_50dp">50dp</dimen>
+    <dimen name="pad_5dp">5dp</dimen>
+    <dimen name="pad_75dp">75dp</dimen>
+    <dimen name="setting_title_text">16sp</dimen>
+    <dimen name="txt_10sp">10sp</dimen>
+    <dimen name="txt_12sp">12sp</dimen>
+    <dimen name="txt_14sp">14sp</dimen>
+    <dimen name="txt_16sp">16sp</dimen>
+    <dimen name="txt_18sp">18sp</dimen>
+    <dimen name="txt_20sp">20sp</dimen>
+    <dimen name="txt_22sp">22sp</dimen>
+    <dimen name="txt_25sp">25sp</dimen>
+    <dimen name="txt_8sp">8sp</dimen>
+    <string name="app_name">CropImageLibrary</string>
+    <string name="cancel">CANCEL</string>
+    <string name="no_storage_card">No storage card</string>
+    <string name="not_enough_space">Not enough space</string>
+    <string name="preparing_card">Preparing card</string>
+    <string name="save">SAVE</string>
+    <string name="saving_image">Saving image</string>
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    <style name="CropButton">
+        <item name="android:layout_margin">1dp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">3dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_width">60dp</item>
+        <item name="android:textSize">@dimen/txt_16sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/selector_button_blue_darker</item>
+    </style>
+</resources>

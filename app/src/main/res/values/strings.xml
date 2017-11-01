@@ -1,0 +1,353 @@
+<resources>
+    <string name="app_name">Lokaso</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="username">Username</string>
+    <string name="or">OR</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="forgot_password_">Forgot Password</string>
+    <string name="email">Email</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="password">Password</string>
+    <string name="notification">Notification</string>
+    <string name="notifications">Notifications</string>
+    <string name="about_me_optional">About Me (Optional)</string>
+    <string name="location">Location</string>
+
+    <string name="menu_filter">Filter</string>
+    <string name="menu_location_gps">Location from GPS</string>
+    <string name="menu_location_manual">Manual Location</string>
+
+    <array name="profession">
+        <item>Select Profession</item>
+        <item>Student</item>
+        <item>Working</item>
+    </array>
+
+    <string name="facebook_app_id">915698185223701</string>
+
+    <!--Google Map Adroid key-->
+    <!--<string name="map_android_key">AIzaSyB3bbf_fih1NoWO9-4qZ-tv9f0vTNlgIDE</string>--> <!-- sujay -->
+    <!--<string name="map_android_key">AIzaSyCfb3gZtTIHWWVqtx-6IfPm4XTybCogMPg</string>--> <!-- wrong -->
+    <string name="map_android_key">AIzaSyAQVEGs4RDzStVGGHrj5o-pHSmEi5AkvRc</string> <!-- lax,nara -->
+
+
+    <string name="title_activity_slpash">SplashActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="select_profile_picture">Select a profile picture</string>
+    <string name="take_photo">Take photo</string>
+    <string name="choose_from_library">Choose from library</string>
+    <string name="network_error">Network Error</string>
+    <string name="no_internet_connection">No Internet Connection Please check connection</string>
+    <string name="retry">Retry</string>
+    <string name="cancel">Cancel</string>
+    <string name="cancelled">Cancelled</string>
+    <string name="permission_not_granted">Permission Denied</string>
+    <string name="ok">Ok</string>
+    <string name="fb_error_title">Facebook error</string>
+    <string name="provider_email">email</string>
+    <string name="provider_facebook">facebook</string>
+    <string name="SUCCESS_TRUE">true</string>
+    <string name="SUCCESS_FALSE">false</string>
+    <string name="what_are_you_interested_in">What are you interested in?</string>
+    <string name="pick_whatever_catches_your_eyes_you_can_always_fine_tune_things_later">Pick whatever catches your eyes ... you can always fine-tune things later</string>
+    <string name="facebook">facebook</string>
+    <string name="normal">normal</string>
+    <string name="facebook_new_user_saved">Facebook new user saved</string>
+    <string name="continu">Continue</string>
+    <string name="lokaso_notifications">Lokaso Notifications</string>
+    <string name="ask_for_notifications">Do you like to receive notifications for the queries around you?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="folks_around">Folks Around</string>
+    <string name="queries_around">Queries Around</string>
+    <string name="upload_pic">Upload Pic</string>
+    <string name="upload_query">Upload Query</string>
+    <string name="chats">Chats</string>
+    <string name="timeline">Timeline</string>
+    <string name="recover">Recover</string>
+    <string name="logout">Log out</string>
+    <string name="home">Home</string>
+    <string name="enter_query">Enter Query</string>
+    <string name="post_query">Post Query</string>
+    <string name="answer">Answer</string>
+    <string name="submit">Submit</string>
+    <string name="question">Question</string>
+    <string name="queries">Queries</string>
+    <string name="folks">Folks</string>
+    <string name="GPSAlertDialogTitle">GPS</string>
+    <string name="GPSAlertDialogMessage">GPS is disabled</string>
+    <string name="action_settings">Settings</string>
+    <string name="distance">Distance</string>
+    <string name="comment">Comment</string>
+    <string name="_0">0</string>
+    <string name="name">Name</string>
+    <string name="follow">Follow</string>
+    <string name="profession">Profession</string>
+    <string name="un_follow">Unfollow</string>
+    <string name="my_query">My query</string>
+    <string name="profile">Profile</string>
+    <string name="my_profile">My Profile</string>
+    <string name="credit_points">Credit\nPoints</string>
+    <string name="about_me">About me</string>
+    <string name="followers">Followers</string>
+    <string name="save">Save</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="photos">Local tip</string>
+    <string name="enter_your_message">Enter your message</string>
+    <string name="user_name">User name</string>
+    <string name="message">Message</string>
+    <string name="your_message">Your Message</string>
+    <string name="gcm_send_message">Token retrieved and sent to server! You can now use gcmsender to
+        send downstream messages to this app.</string>
+    <string name="registering_message">Generating InstanceID token...</string>
+    <string name="token_error_message">An error occurred while either fetching the InstanceID token,
+        sending the fetched token to the server or subscribing to the PubSub topic. Please try
+        running the sample again.</string>
+    <string name="chat_room">Chat Room</string>
+    <string name="date">Date</string>
+    <string name="chat_id">chat id</string>
+    <string name="enter_your_comment">Enter your comment</string>
+    <string name="discovery_comment">Local tip comments</string>
+    <string name="view_query">View Query</string>
+    <string name="enter_your_response">Enter your response</string>
+    <string name="change_password">Change Password</string>
+    <string name="current_password">Current Password</string>
+    <string name="new_password">New Password</string>
+    <string name="enter_otp">Enter OTP</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="view_credits">View Credits</string>
+    <string name="latest">Latest</string>
+    <string name="credit">Credit</string>
+    <string name="expiring_soon">Expiring soon</string>
+    <string name="terms_conditions"><u><![CDATA[Terms & Conditions]]></u></string>
+    <string name="saved_discoveries">Saved Local Tips</string>
+    <string name="discoveries">Local Tips</string>
+    <string name="places">Places</string>
+    <string name="discovery_name">Local tip name</string>
+    <string name="show_notification">Show Notification\t</string>
+    <string name="email_id">Email ID</string>
+    <string name="select_interest">Select Interest</string>
+    <string name="select_location">Select Location</string>
+    <string name="answer_in">Answer in</string>
+    <string name="post">Post</string>
+    <string name="interest">Interest</string>
+    <string name="type_a_message">Type a message</string>
+    <string name="points">Points</string>
+    <string name="user_profile">User Profile</string>
+    <string name="following">Following</string>
+    <string name="follow_user">Follow user</string>
+    <string name="following_query">Following Query</string>
+    <string name="follow_query">Follow Query</string>
+    <string name="following_nuser">Following\nuser</string>
+    <string name="follow_nuser">Follow\nuser</string>
+    <string name="following_nquery">Following\nquery</string>
+    <string name="follow_nquery">Follow\nquery</string>
+    <string name="respond">Respond</string>
+    <string name="report">Report</string>
+    <string name="flag_query">Flag Query</string>
+    <string name="extend">Extend</string>
+    <string name="enter_email">Enter email</string>
+    <string name="update">Update</string>
+    <string name="retype_password">Retype password</string>
+    <string name="following_user">Following user</string>
+    <string name="queries_around1">Queries around</string>
+    <string name="query">Query</string>
+    <string name="away">Away</string>
+    <string name="km">km</string>
+    <string name="queries_attended">Queries\nattended</string>
+    <string name="queriesn_attended">Queries\nRaised</string>
+    <string name="responses">Responses</string>
+    <string name="remaining">remaining</string>
+    <string name="enter_discovery_name">Enter local tip name</string>
+    <string name="Edit">OK</string>
+    <string name="check_network">Network not available</string>
+    <string name="view_profile">View Profile</string>
+    <string name="time">time</string>
+    <string name="extend_validity">Extend Validity</string>
+    <string name="select_validity">Select Validity</string>
+    <string name="select_profession">Select Profession</string>
+    <string name="caption">Caption</string>
+    <string name="enter_caption">Enter Caption</string>
+    <string name="local_tips">Local tips</string>
+    <string name="local_tip">Local tip</string>
+    <string name="suggestion">Local Tip</string>
+    <string name="suggestions">Local Tips</string>
+    <string name="suggestion_edit_text">You could add an image for this tip</string>
+    <string name="your_suggestion">Your Local Tip</string>
+    <string name="enter_suggestion">Enter a local tip</string>
+    <string name="create_suggestion">Post a local tip</string>
+    <string name="create_suggestion_toolbar">Post a local tip, the best one</string>
+    <string name="select_category">Select Category</string>
+    <string name="category">Category</string>
+    <string name="suggest_one_thing_around_you_that_a_traveler_shouldn_t_miss_out">Suggest one thing around you that a traveler shouldn\'t miss out !</string>
+    <string name="you_can_add_one_thing_in_each_category_for_multiple_places_credit_points_50_for_each_suggestion">* you can add one thing in each category for multiple places (Credit points +50 for each local tip)</string>
+    <string name="credit_points_50_suggestions_with_pics_attract_more_eyes">*Credit points +50 (Local Tip with pics attract more eyes)</string>
+    <string name="add_more">Add More</string>
+    <string name="add_a_picture">Add a picture</string>
+    <string name="add_a_picture_hint_message">Its Optional, but you will get more credit points for tip with a image.</string>
+    <string name="done">Done</string>
+    <string name="select_option">Select Option</string>
+    <string name="expand">Expand</string>
+    <string name="add_to_wishlist">Add to Wishlist  </string>
+    <string name="spam">Spam</string>
+    <string name="remove_from_wishlist">Remove Wishlist</string>
+    <string name="send">Send</string>
+    <string name="user">User</string>
+    <string name="_1234_credits">(1234 Credits)</string>
+    <string name="by">by</string>
+    <string name="edit_suggestion">Edit Local Tip</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="search">Search</string>
+    <string name="search_suggestions">Search Local tips</string>
+    <string name="search_folks">Search Folks</string>
+    <string name="search_queries">Search Queries</string>
+    <string name="error_message">Error Message</string>
+    <string name="suggestions_not_found">Local tips Not Found.</string>
+    <string name="suggestion_empty">Local tips Not Found. Would you like to post one ?</string>
+    <string name="queries_not_found">Queries Not Found</string>
+    <string name="folks_not_found">Folks Not Found</string>
+    <string name="followers_not_found">Followers Not Found</string>
+    <string name="notifications_not_found">Notifications not found</string>
+    <string name="failed_to_fetch_data">Failed to fetch data. Please try again!!</string>
+    <string name="edit_response">Edit Response</string>
+    <string name="gps_is_settings">GPS settings</string>
+    <string name="gps_not_enabled">GPS is not enabled. Do you want to go to settings menu?</string>
+    <string name="settings">Settings</string>
+    <string name="log_in_with_facebook">Log in with Facebook</string>
+    <string name="let_us_start">Let us start</string>
+    <string name="dialog_title_on_cancel">Are you sure?</string>
+    <string name="dialog_message_on_cancel">Are you sure you want to exit. The changes are not saved. Continue discarding the changes?</string>
+    <string name="location_access_local_tips">Please give us location access so we can show you the Local tips.</string>
+    <string name="location_access_queries">Please give us location access so we can show you Queries around you.</string>
+    <string name="location_access">Please give us location access so we can show you Local feeds.</string>
+    <string name="if_you_are_around_miramar_don_t_miss_the_almond_coffee_mushroom_sandwich_at_cafe_basil"><![CDATA[Eg. If you are around Miramar, Don\'t miss the almond coffee & mushroom sandwich at cafe basil.]]></string>
+
+    <string name="txt_current_location_select">SELECT YOUR LOCATION</string>
+
+    <string name="dialog_title_gps_mode">Select location mode</string>
+    <string name="dialog_message_gps_mode">Please select a mode by which we could get your location to show you the best nearby local tips and queries.</string>
+    <string name="dialog_auto_gps_mode">Auto detect</string>
+    <string name="dialog_custom_gps_mode">Custom select</string>
+
+
+    <string name="drawer_suggestion">Saved Local Tips</string>
+    <string name="drawer_invite">Invite</string>
+    <string name="drawer_feedback">Feedback</string>
+    <string name="drawer_rateus">Rate Us</string>
+    <string name="drawer_logout">Saved Local Tips</string>
+
+
+    <string name="message_refer_code">Use Referral Code &amp; earn points</string>
+    <string name="hint_refer_code">Referral Code if any</string>
+
+    <string name="message_aboutme">Apparently, %s prefers to keep an air of mystery about him</string>
+
+
+    <string name="tab_suggestion">Local Tip</string>
+    <string name="tab_query">Queries</string>
+    <string name="tab_follower">Follower</string>
+
+
+    <string name="first_chat_title">Welcome to Lokaso</string>
+    <string name="first_chat_message">Now you could chat with Lokaso Official to get any kind of help or give any feedback. We are always here for you.</string>
+
+    <string name="profile_hint_name">…</string>
+    <string name="profile_hint_profession">…</string>
+    <string name="profile_hint_about">…</string>
+
+
+    <!--<string name="popup_message_location">Please provide a exact location name so that anyone could easily find the place on the map.</string>-->
+    <string name="popup_message_location">Please select the location carefully, for someone may click on it to reach there.</string>
+
+
+    <string name="dialog_suggestion_seen_title">Unable to find something ??</string>
+    <string name="dialog_suggestion_seen_message">Are you unable to find something that you are looking for? Try posting a query to get response from someone who knows about it.</string>
+    <string name="dialog_suggestion_seen_ok">Post a Query</string>
+    <string name="dialog_suggestion_seen_cancel">No Thanks</string>
+
+    <string name="app_update_message_normal">There is a new version of the app available on playstore. You could get new features and improvements in the newer version. Update the build from the store.</string>
+    <string name="app_update_message_force">There is a new version of the app available on playstore. You need to update the app before you proceed.</string>
+    <string name="app_update_button_update">UPDATE</string>
+    <string name="app_update_button_skip">SKIP</string>
+
+
+    <string name="dialog_title_spam_query_response">Spam Query Response</string>
+    <string name="dialog_message_spam_query_response">Are you sure you want to Spam this Query Response?</string>
+
+    <string name="dialog_title_spam_tip">Spam Local Tip</string>
+    <string name="dialog_message_spam_tip">Are you sure you want to Spam this Local Tip?</string>
+
+    <string name="dialog_title_spam_user">Spam User</string>
+    <string name="dialog_message_spam_user">Are you sure you want to Spam this User?</string>
+
+
+    <string name="dialog_spam_ok">Yes</string>
+    <string name="dialog_spam_cancel">No</string>
+
+    <string name="dialog_gpssetting_title">GPS settings</string>
+    <string name="dialog_gpssetting_message">GPS is not enabled. Do you want to go to settings menu?</string>
+    <string name="dialog_gpssetting_ok">Settings</string>
+    <string name="dialog_gpssetting_cancel">Manual Location</string>
+
+    <string name="dialog_email_title">Enter You Email Address</string>
+    <string name="dialog_email_hint">Email Address</string>
+
+    <string name="activity_tip_like_user">Favorite List</string>
+
+    <string name="tip_like_credit">Credits</string>
+    <string name="tip_like_queries_attended">Queries attended</string>
+
+
+    <string name="activity_filter">Filter</string>
+    <string name="filter_title_sortby_title">SORT BY</string>
+    <string name="filter_title_sortby_latest">Latest</string>
+    <string name="filter_title_sortby_distance">Distance</string>
+    <string name="filter_title_sortby_expiring">Expiring Soon</string>
+    <string name="filter_title_select_interest">SELECT INTERESTS</string>
+    <string name="filter_title_select_distance">DISTANCE</string>
+    <string name="filter_button">APPLY FILTER</string>
+
+    <string name="walkthrough_screen1">Confused with your travel tips? Don\'t know whom to ask, where to go, what to eat?</string>
+    <string name="walkthrough_screen2">Simply see what locals are suggesting, ask queries, get responses from local experts</string>
+    <string name="walkthrough_screen3">Connect with folks around you, explore best of the places, only with Lokaso</string>
+
+
+    <string name="share_text">Don\'t miss what\'s trending around you. Use Lokaso app &amp; get local\'s recommendations of about a place. https://goo.gl/3dcjvb</string>
+
+
+    <string name="tour_home_drawer_desc">Your profile dashboard</string>
+    <string name="tour_home_add_tip_desc">Post a local tip or ask around</string>
+    <string name="tour_home_location">Click here to change location</string>
+    <string name="tour_home_filter">Use filter to customize tips</string>
+
+    <string name="tour_drawer_invite_desc">Invite your friends to join Lokaso</string>
+
+    <string name="tour_suggestion_detail_wishlist_desc">Add to wishlist</string>
+    <string name="tour_suggestion_detail_share_desc">Share this tip</string>
+    <string name="tour_suggestion_detail_location_desc">Navigate</string>
+
+    <string name="tour_profile_follow_desc">Follow</string>
+    <string name="tour_profile_chat_desc">Chat</string>
+
+    <string name="tour_search_filter_desc">Click here to search through local tips/queries/folks</string>
+
+
+    <string name="location_edittext_hint">Search here..</string>
+    <string name="location_text_gps">Auto Detect</string>
+    <string name="location_text_header_recent">RECENT SEARCHES</string>
+
+    <string name="location_map_title">Select location on map</string>
+    <string name="location_button_select">SELECT</string>
+
+    <string name="location_text_find_on_map">LOCATE EXACT LOCATION ON MAP..!!</string>
+
+    <string name="button_tip_post">POST A NEW TIP</string>
+    <string name="button_tip_view_all">VIEW ALL TIPS</string>
+    <string name="button_tip_or_text">OR</string>
+
+</resources>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/container">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_layout" />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="@dimen/radius_query"
+        app:cardElevation="@dimen/elevation_query"
+        app:contentPadding="5dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvInterestHint"
+                        style="@style/textViewOrangeMedium"
+                        android:layout_marginTop="5dp"
+                        android:drawablePadding="10dp"
+                        android:drawableRight="@drawable/ic_interest"
+                        android:gravity="center"
+                        android:paddingLeft="2dp"
+                        android:text="@string/select_interest" />
+
+                    <TextView
+                        android:id="@+id/tvInterest"
+                        style="@style/core_edittext_style4"
+                        android:drawableRight="@drawable/ic_circle_down"
+                        android:gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:hint="@string/select_interest"
+                        android:padding="10dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvQueryHint"
+                        style="@style/textViewOrangeMedium"
+                        android:layout_marginTop="5dp"
+                        android:drawablePadding="10dp"
+                        android:drawableRight="@drawable/ic_query"
+                        android:gravity="center"
+                        android:paddingLeft="2dp"
+                        android:text="@string/enter_query" />
+
+                    <EditText
+                        android:id="@+id/tvQuery"
+                        style="@style/core_edittext_style4"
+                        android:gravity="center_horizontal"
+                        android:hint="@string/enter_query"
+                        android:layout_marginTop="5dp"
+                        android:inputType="textCapSentences"
+                        android:maxLength="140"
+                        android:minLines="2"
+                        android:padding="10dp"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvLocationHint"
+                        style="@style/textViewOrangeMedium"
+                        android:drawablePadding="10dp"
+                        android:drawableRight="@drawable/ic_location"
+                        android:gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:paddingLeft="2dp"
+                        android:text="@string/select_location" />
+
+                    <TextView
+                        android:id="@+id/tvLocation"
+                        style="@style/core_edittext_style4"
+                        android:drawableRight="@drawable/ic_circle_down"
+                        android:gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:hint="@string/location"
+                        android:padding="10dp"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvTimeHint"
+                        style="@style/textViewOrangeMedium"
+                        android:drawablePadding="10dp"
+                        android:drawableRight="@drawable/ic_time"
+                        android:gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:paddingLeft="2dp"
+                        android:text="@string/answer_in" />
+
+                    <!--<Spinner
+                        android:id="@+id/spTime"
+                        style="@style/spinner_normal" />-->
+
+                    <TextView
+                        android:id="@+id/tvTime"
+                        style="@style/core_edittext_style4"
+                        android:gravity="center"
+                        android:hint="@string/answer_in"
+                        android:layout_marginTop="5dp"
+                        android:padding="10dp"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/bPost"
+                    style="@style/orange_button_style"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="35dp"
+                    android:onClick="onPostQueryClick"
+                    android:text="@string/post" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
+
+<include layout="@layout/progress_loader"
+    />
+    </RelativeLayout>

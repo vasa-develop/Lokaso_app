@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<shape
+    android:shape="rectangle"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<!--
+    <gradient
+        android:type="radial"
+        android:startColor="@color/tra_gray"
+        android:centerColor="@color/red"
+        android:endColor="@color/amber"
+        android:gradientRadius="2"
+        android:angle="270"
+        android:centerX="1"
+        android:centerY="0"/>-->
+
+
+
+    <gradient
+        android:type="sweep"
+        android:startColor="@color/tra_gray"
+        android:centerColor="@color/transparent"
+        android:endColor="@color/tra_gray"
+        android:angle="0"
+        android:centerX="1"
+        android:centerY="0"
+        />
+
+</shape>

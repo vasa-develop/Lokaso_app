@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:id="@+id/container">
+
+    <include layout="@layout/toolbar_layout" />
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/filter_subtitle_text_style"
+                android:text="@string/filter_title_sortby_title"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/sortLatestLayout"
+                    style="@style/filter_sort_layout_style">
+
+                    <com.lokaso.custom.ImageViewTint
+                        style="@style/filter_sort_image_style"
+                        android:src="@drawable/ic_filter_latest"/>
+
+                    <TextView
+                        style="@style/filter_sort_text_style"
+                        android:text="@string/filter_title_sortby_latest"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/sortDistanceLatest"
+                    style="@style/filter_sort_layout_style">
+
+                    <com.lokaso.custom.ImageViewTint
+                        style="@style/filter_sort_image_style"
+                        android:src="@drawable/ic_filter_distance"/>
+
+                    <TextView
+                        style="@style/filter_sort_text_style"
+                        android:text="@string/filter_title_sortby_distance"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/sortExpiringSoonLatest"
+                    style="@style/filter_sort_layout_style">
+
+                    <com.lokaso.custom.ImageViewTint
+                        style="@style/filter_sort_image_style"
+                        android:src="@drawable/ic_filter_expiring_soon"/>
+
+                    <TextView
+                        style="@style/filter_sort_text_style"
+                        android:text="@string/filter_title_sortby_expiring"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                style="@style/filter_subtitle_text_style"
+                android:text="@string/filter_title_select_interest"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                />
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <Button
+        style="@style/filter_button_style"
+        android:id="@+id/applyButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/filter_button"
+        />
+</LinearLayout>

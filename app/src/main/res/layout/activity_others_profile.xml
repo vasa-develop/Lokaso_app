@@ -1,0 +1,541 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:id="@+id/container">
+
+    <include layout="@layout/toolbar_layout"
+        android:id="@+id/toolbar"/>
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:padding="10dp"
+            app:layout_collapseMode="parallax"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/ivPic"
+                    android:layout_width="@dimen/profile_image_size"
+                    android:layout_height="@dimen/profile_image_size"
+                    android:layout_gravity="center"
+                    android:src="@drawable/user_placeholder" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/tvName"
+                        style="@style/textViewGrayDarkMedium"
+                        android:text="Rajat Kishore" />
+
+                    <TextView
+                        android:id="@+id/tvProfession"
+                        style="@style/textViewGrayDarkSmall"
+                        android:layout_marginTop="1dp"
+                        android:text="Actor" />
+
+                    <TextView
+                        android:id="@+id/tvAboutMe"
+                        style="@style/textViewGrayLite"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:ellipsize="end"
+                        android:autoLink="email|web"
+                        android:textColorLink="@color/colorPrimary"
+                        android:text="All the information required about me is to be found by you. I am the owner of Lokaso and thats all you need to know about me" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/layout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+
+                <LinearLayout
+                    style="@style/image_follow_layout_style"
+                    android:id="@+id/followLayout">
+
+                    <com.lokaso.custom.ImageViewTint
+                        style="@style/image_follow_style"
+                        android:id="@+id/bFollow"
+                        android:src="@drawable/ic_follow_grey" />
+
+                    <TextView
+                        android:id="@+id/tvFollow"
+                        style="@style/image_follow_text_style"
+                        android:text="@string/follow"
+                        android:visibility="visible"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layoutCredit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvCreditPoints"
+                        style="@style/textViewBlackExtraLarge"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="@string/_0" />
+
+                    <TextView
+                        android:id="@+id/tvPointsHint"
+                        style="@style/textViewGreySmall"
+                        android:text="@string/points"
+                        android:textAllCaps="true" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/image_follow_layout_style"
+                    android:id="@+id/messageLayout"
+                    android:clickable="true">
+
+                    <com.lokaso.custom.ImageViewTint
+                        style="@style/image_follow_style"
+                        android:id="@+id/bMessage"
+                        android:src="@drawable/ic_message" />
+
+                    <TextView
+                        android:id="@+id/tvMessage"
+                        style="@style/image_follow_text_style"
+                        android:text="@string/chats"
+                        android:visibility="visible"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvUnreadCount"
+                    style="@style/textViewBlueGreyNormal"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_toRightOf="@+id/layoutCredit"
+                    android:background="@drawable/circle_orange"
+                    android:gravity="center"
+                    android:text="@string/_0"
+                    android:textColor="@color/colorPrimary"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <View
+                style="@style/line_green"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:visibility="gone" />
+
+        </LinearLayout>
+<!--
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:padding="10dp"
+            app:layout_collapseMode="parallax"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/ivPic"
+                    android:layout_width="@dimen/profile_image_size"
+                    android:layout_height="@dimen/profile_image_size"
+                    android:layout_gravity="center"
+                    android:src="@drawable/user_placeholder" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/tvName"
+                    style="@style/textViewGrayDarkMedium"
+                    android:text="Rajat Kishore" />
+
+                <TextView
+                    android:id="@+id/tvProfession"
+                    style="@style/textViewGrayDarkSmall"
+                    android:layout_marginTop="1dp"
+                    android:text="Actor" />
+
+                <TextView
+                    android:id="@+id/tvAboutMe"
+                    style="@style/textViewGrayLite"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:ellipsize="end"
+                    android:text="All the information required about me is to be found by you. I am the owner of Lokaso and thats all you need to know about me" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+
+            <LinearLayout
+                style="@style/image_follow_layout_style"
+                android:id="@+id/followLayout">
+
+                <com.lokaso.custom.ImageViewTint
+                    style="@style/image_follow_style"
+                    android:id="@+id/bFollow"
+                    android:src="@drawable/ic_follow_grey" />
+
+                <TextView
+                    android:id="@+id/tvFollow"
+                    style="@style/image_follow_text_style"
+                    android:text="@string/follow"
+                    android:visibility="visible"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutCredit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvCreditPoints"
+                    style="@style/textViewBlackExtraLarge"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/_0" />
+
+                <TextView
+                    android:id="@+id/tvPointsHint"
+                    style="@style/textViewGreyNormal"
+                    android:text="@string/points"
+                    android:textAllCaps="true" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/image_follow_layout_style"
+                android:id="@+id/messageLayout"
+                android:clickable="true">
+
+                <com.lokaso.custom.ImageViewTint
+                    style="@style/image_follow_style"
+                    android:id="@+id/bMessage"
+                    android:src="@drawable/ic_message" />
+
+                <TextView
+                    android:id="@+id/tvMessage"
+                    style="@style/image_follow_text_style"
+                    android:text="@string/chats"
+                    android:visibility="visible"/>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tvUnreadCount"
+                style="@style/textViewBlueGreyNormal"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="30dp"
+                android:layout_toRightOf="@+id/layoutCredit"
+                android:background="@drawable/circle_orange"
+                android:gravity="center"
+                android:text="@string/_0"
+                android:textColor="@color/colorPrimary"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <View
+            style="@style/line_green"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:visibility="gone" />
+
+
+    </LinearLayout>
+-->
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@color/light_grey_background"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:tabGravity="center"
+            app:tabIndicatorColor="@color/transparent"
+            app:tabMode="fixed"
+            app:tabSelectedTextColor="@color/white"
+            app:tabTextAppearance="@style/textViewLargeBold"
+            app:tabTextColor="@color/black"
+            app:tabPaddingStart="0dp"
+            app:tabPaddingEnd="0dp"
+            app:layout_collapseMode="pin"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</RelativeLayout>
+
+
+
+
+    <!--
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <include layout="@layout/toolbar_layout" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <RelativeLayout
+                android:id="@+id/layoutProfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/ivPic"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/user_placeholder" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/ivPic"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/tvName"
+                        style="@style/textViewOrangeExtraLarge"
+                        android:text="@string/name" />
+
+                    <TextView
+                        android:id="@+id/tvProfession"
+                        style="@style/textViewLightGreyMedium"
+                        android:layout_below="@+id/tvName"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/profession" />
+
+                    <TextView
+                        android:id="@+id/tvAboutMe"
+                        style="@style/textViewGreyMedium"
+                        android:layout_below="@+id/tvProfession"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="5dp"
+                        android:ellipsize="end"
+                        android:maxLines="3"
+                        android:text="@string/about_me" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/layout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                &lt;!&ndash;<ToggleButton
+                    android:id="@+id/bFollow"
+                    style="@style/normal_button_style"
+                    android:layout_width="wrap_content"
+                    android:background="@drawable/toggle_follow_text"
+                    android:inputType="text"
+                    android:layout_weight="1"
+                    android:textOff="@string/follow"
+                    android:textOn="@string/following" />&ndash;&gt;
+
+                <ImageView
+                    android:id="@+id/bFollow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_follow_grey" />
+
+                <LinearLayout
+                    android:id="@+id/layoutCredit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvCreditPoints"
+                        style="@style/textViewBlackExtraLarge"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="@string/_0" />
+
+                    <TextView
+                        android:id="@+id/tvPointsHint"
+                        style="@style/textViewGreyNormal"
+                        android:text="@string/points"
+                        android:textAllCaps="true" />
+
+                </LinearLayout>
+
+                <ImageButton
+                    android:id="@+id/bMessage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_toRightOf="@+id/layoutCredit"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:onClick="onMessageClick"
+                    android:src="@drawable/ic_message" />
+
+                <TextView
+                    android:id="@+id/tvUnreadCount"
+                    style="@style/textViewBlueGreyNormal"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_toRightOf="@+id/layoutCredit"
+                    android:background="@drawable/circle_orange"
+                    android:gravity="center"
+                    android:text="@string/_0"
+                    android:textColor="@color/colorAccent"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <View
+                style="@style/line_green"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:visibility="gone" />
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tabLayout"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/light_grey_background"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                app:tabGravity="center"
+                app:tabIndicatorColor="@color/transparent"
+                app:tabMode="fixed"
+                app:tabSelectedTextColor="@color/white"
+                app:tabTextAppearance="@style/textViewLargeBold"
+                app:tabTextColor="@color/black"
+                app:tabPaddingStart="0dp"
+                app:tabPaddingEnd="0dp"/>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+    -->

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="170dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/off_white">
+
+    <Button
+        android:id="@+id/idLatest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="left|center_vertical"
+        android:padding="5dp"
+        android:text="@string/latest" />
+
+    <Button
+        android:id="@+id/idDistance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="left|center_vertical"
+        android:padding="5dp"
+        android:text="@string/distance" />
+
+</LinearLayout>
